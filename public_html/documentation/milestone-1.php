@@ -17,6 +17,7 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
+
 		<meta charset="utf-8">
 		<title>PWP Milestone-1</title>
 	</head>
@@ -49,8 +50,13 @@
 				<p><strong>Frustrations and needs:</strong> Johan's team is over worked and he really needs another web developer. The company has some new contracts but they still cannot afford to hire a high level or even mid level developer. <br> That being said Johan is not impressed by most entry level candidates and wants to hire someone with more experience but cannot afford to pay them what they are worth from the start.</p>
 				<p><strong>Goal:</strong> Johan's goal is to be able to find someone who really stands out as a promising addition to his team just be taking a quick look at their portfolio site. <br> He want's someone who seems like they know what they are doing and he wants to see some personality in the site, he wants the new hire to get along with the rest of his team.</p>
 			</section>
-
-
+			<section>
+				<br>
+				<h2>Use Case</h2>
+				<p>John Leckerschmeck has received and read my cover letter and resume for the developer position at his company.</p>
+				<p>Based on my submission he decided to view my LinkedIn profile and check out my personal website. </p>
+				<p>After quickly clicking around on my website and looking over my LinkedIn profile he decides to give me a call the next day while doing phone screenings for the position</p>
+			</section>
 		</main>
 
 	</body>

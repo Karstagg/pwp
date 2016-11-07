@@ -1,27 +1,4 @@
-<?php
-/**
- * Created by PhpStorm.
- * User: Matthew
- * Date: 10/21/2016
- * Time: 10:03 AM
- */
-?>
-<?php
-/**
- * Created by PhpStorm.
- * User: Matthew
- * Date: 10/17/2016
- * Time: 4:37 PM
- */
-?>
-<?php
-/**
- * Created by PhpStorm.
- * User: Matthew
- * Date: 10/12/2016
- * Time: 11:00 AM
- */
-?>
+
 <!DOCTYPE html>
 <html lang="en">
 	 <head>

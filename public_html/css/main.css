@@ -1,0 +1,10 @@
+html{ /*global body style*/
+	font-family: 'Orbitron', sans-serif;
+	text-shadow:0rem 0rem 0.5rem black;
+	color: white;
+	font-size: 1.1rem;
+	background-color: dimgray;
+	text-decoration: none;
+	margin: 0;
+	height: 100%;
+}

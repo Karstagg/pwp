@@ -1,10 +1,107 @@
-html{ /*global body style*/
-	font-family: 'Orbitron', sans-serif;
-	text-shadow:0rem 0rem 0.5rem black;
-	color: white;
-	font-size: 1.1rem;
-	background-color: dimgray;
-	text-decoration: none;
-	margin: 0;
+
+/*adapted from http://codepen.io/devatrox/pen/wztlx - Jason Nickel*/
+html {
 	height: 100%;
+}
+
+body {
+	max-height: 100%;
+	display: flex;
+	flex-direction: column;
+	background-color: black;
+	background-image: url(../img/Love-Coding.mp4);
+	background-position: center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	-o-background-size: cover;
+	padding-bottom: 70px;
+
+}
+.navbar {
+	height: 10%;
+	background-color: #111111;
+	background-image: url(../img/3px-tile.png);
+}
+.navbar-brand {
+	color: white;
+}
+
+@media (max-width: 750px) {
+	.navbar-fixed-top{
+		display: none;
+	}
+}
+
+
+/*parallax effect by david walsh https://davidwalsh.name/parallax*/
+.parallax [class*="bg__"] {
+	position: relative;
+	height: 50vh;
+	text-indent: -9999px;
+	background-attachment: fixed;
+	background-position: top center;
+	background-size: cover;
+}
+.parallax [class*="bg__"]:nth-child(2n) {
+	box-shadow: inset 0 0 1em #111;
+}
+.parallax .bg__foo, .parallax .bg__bazz {
+	height: 100vh;
+}
+.parallax .bg__foo {
+	background-image: url(../img/center-1733895.jpg);
+	filter: grayscale(100%);
+}
+.parallax .bg__bar {
+	background-image: url(../img/center-1733895.jpg);
+}
+.parallax .bg__baz {
+	background-image: url(../img/center-1733895.jpg);
+	filter: grayscale(100%);
+}
+.parallax .bg__bazz {
+	background-image: url(../img/center-1733895.jpg);
+}
+.parallax .bg__break {
+	box-shadow: inset 0 0 1em #111;
+	background-image: url(../img/center-1733895.jpg);
+	filter: grayscale(100%);
+}
+.parallax .capture {
+	float: right;
+	width: 200px;
+	padding: 1em;
+	margin: -1.5em 1em 0 0;
+	text-indent: 0;
+	background: rgba(243, 243, 243, 0.75);
+	box-shadow: 0 1px 0.125em #333;
+}
+
+article .container {
+	width: 600px;
+	margin: 0 auto;
+}
+article header {
+	position: relative;
+	margin: -5em 0 0 0;
+	padding: 1em;
+	text-align: left;
+	font-size: 2em;
+	color: #333;
+	background-color: rgba(255, 255, 255, 0.75);
+}
+article h1, article h2 {
+	margin: 0 0 0.333em;
+}
+article section {
+	padding: 3em;
+}
+article section.parallax {
+	margin: 0;
+	padding: 0;
+}
+
+a, a:visited, a:active {
+	color: #f66;
 }

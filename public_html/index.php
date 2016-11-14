@@ -22,17 +22,12 @@
 		<!-- latest min jQuery and Bootstrap-->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
+		<script src="js/lib.js"></script>
 		<title>Matthew R. Fisher</title>
-
-
 	</head>
-
-
 	<body>
-		<header>
 
-		</header>
+
 		<nav class="navbar navbar-dark bg-inverse navbar-fixed-top">
 			<div class="container-fluid">
 				<!-- Brand and toggle get grouped for better mobile display -->
@@ -43,9 +38,8 @@
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
-					<a class="navbar-brand" href="#">Bootstrap-demo2</a>
+					<a class="navbar-brand" href="#">Matt Fisher</a>
 				</div>
-
 				<!-- Collect the nav links, forms, and other content for toggling -->
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 					<ul class="nav navbar-nav navbar-right">
@@ -57,25 +51,55 @@
 		</nav>
 		<article>
 			<div class="parallax">
-				<div class="bg__foo">foo</div>
+				<div class="bg__foo"></div>
+				<div class="container-fluid">
+					<div id="title-row" class="row">
+						<div class="col-xs-12">
+							<div class="pad-down text-center">
+								<div id="pulse" class="pulse">
+									<h1 id="kiteCrypt-title" class="fade-in">KiteCrypt</h1>
+								</div>
+								<p id="slogan" class="fade-in-out">A secure chat site for our insecure world</p>
+								<p id="sign-up" class="pad-down2 fade-in-2">New? <a href="">Sign up!</a></p>
+							</div>
+						</div>
+					</div>
+					<div id="login-row" class="row">
+						<div class="col-sm-2 col-sm-offset-5">
+							<div class="form-login">
+								<input type="text" id="user-name" class="form-control input-sm chat-input" placeholder="username" />
+								<br>
+								<input type="text" id="user-password" class="form-control input-sm chat-input" placeholder="password" />
+								<br>
+							</div>
+						</div>
+					</div>
+					<div id="login-row-button" class="row">
+						<div class="col-xs-6 col-xs-offset-3 text-center">
+							<a href="#" class="btn btn-login btn-lg">login</a>
+						</div>
+					</div>
+				</div>
 				<div class="bg__bar">bar</div>
 				<div class="bg__baz">baz</div>
 				<div class="bg__bazz">bazz</div>
 			</div>
 		</article>
+
 	</body>
 	<footer>
 		<nav class="navbar navbar-dark bg-inverse navbar-fixed-bottom">
 			<div class="container-fluid">
 				<!-- Brand and toggle get grouped for better mobile display -->
 				<div class="navbar-header">
-					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2" aria-expanded="false">
+					<button type="button" class="navbar-toggle glyphicon glyphicon-menu-hamburger" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2" aria-expanded="false">
 						<span class="sr-only">Toggle navigation</span>
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
-					<a class="navbar-brand" href="#">Bootstrap-demo2</a>
+					<a class="navbar-brand" href="#">Matt Fisher</a>
+
 				</div>
 
 				<!-- Collect the nav links, forms, and other content for toggling -->

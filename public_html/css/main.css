@@ -16,15 +16,71 @@ body {
 	background-size: cover;
 	-o-background-size: cover;
 	padding-bottom: 70px;
+	font-family: 'Orbitron', sans-serif;
+}
+
+.navbar {
+	min-height: 10%;
+	background: dimgrey;
+	opacity: 0.75;
+	background-image: url(../img/gplay.png);
+
+ }
+.navbar-toggle {
+	color: lightgrey;
+}
+.navbar-dark .navbar-brand {
+	font-size: 4rem;
+	color: #31018C !important;
+	animation: pulsate-out 60s infinite !important;
 
 }
-.navbar {
-	height: 10%;
-	background-color: #111111;
-	background-image: url(../img/3px-tile.png);
-}
-.navbar-brand {
-	color: white;
+
+@keyframes pulsate-out{ /*animation for header text*/
+	0% {
+		color: #31018C !important;
+		text-shadow:0rem 0rem 0.25rem white !important;
+	}
+	10% {
+		color: #4C007E;
+		text-shadow:0rem 0rem 0.25rem white !important;
+	}
+	20% {
+		color: #880054;
+		text-shadow:0rem 0rem 0.25rem white !important;
+	}
+	30% {
+		color: #C1002F;
+		text-shadow:0rem 0rem 0.25rem white !important;
+	}
+	40% {
+		color: #FF3E00;
+		text-shadow:0rem 0rem 0.25rem white !important;
+	}
+	50% {
+		color: #FF7D00;
+		text-shadow:0rem 0rem 0.25rem white !important;
+	}
+	60% {
+		color: #FFB300;
+		text-shadow:0rem 0rem 0.25rem white !important;
+	}
+	70% {
+		color: #FCFC07;
+		text-shadow:0rem 0rem 0.25rem white !important;
+	}
+	80% {
+		color: #B7F113;
+		text-shadow:0rem 0rem 0.25rem white !important;
+	}
+	90% {
+		color: #11CA99;
+		text-shadow:0rem 0rem 0.25rem white !important;
+	}
+	100% {
+		color: #31018C !important;;
+		text-shadow:0rem 0rem 0.25rem white !important;
+	}
 }
 
 @media (max-width: 750px) {
@@ -32,8 +88,15 @@ body {
 		display: none;
 	}
 }
+@media (min-width: 750px) {
+	.navbar-fixed-bottom{
+		display: none;
+	}
+}
 
-
+/**********************************************************
+parallax
+**********************************************************/
 /*parallax effect by david walsh https://davidwalsh.name/parallax*/
 .parallax [class*="bg__"] {
 	position: relative;
@@ -52,6 +115,7 @@ body {
 .parallax .bg__foo {
 	background-image: url(../img/center-1733895.jpg);
 	filter: grayscale(100%);
+
 }
 .parallax .bg__bar {
 	background-image: url(../img/center-1733895.jpg);
@@ -104,4 +168,8 @@ article section.parallax {
 
 a, a:visited, a:active {
 	color: #f66;
+}
+
+.v-center {
+	padding-top: 100%;
 }

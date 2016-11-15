@@ -35,6 +35,12 @@ body {
 	animation: pulsate-out 60s infinite !important;
 
 }
+header {
+	max-height: 100%;
+	display: flex;
+	flex-direction: column;
+	background-color: #111111;
+}
 
 @keyframes pulsate-out{ /*animation for header text*/
 	0% {

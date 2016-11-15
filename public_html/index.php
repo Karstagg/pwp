@@ -27,9 +27,6 @@
 	</head>
 	<body>
 
-		<header>
-			<p>hi</p>
-		</header>
 		<nav class="navbar navbar-dark bg-inverse navbar-fixed-top">
 			<div class="container-fluid">
 				<!-- Brand and toggle get grouped for better mobile display -->
@@ -53,6 +50,12 @@
 		</nav>
 		<article>
 			<div class="parallax">
+
+				<div class="cover">
+					<div class="col-xs-6 col-xs-offset-3 text-center v-center">
+						<a href="#" class="btn btn-default">login</a>
+					</div>
+				</div>
 				<div class="bg__foo"></div>
 				<div class="container-fluid">
 					<div id="title-row" class="row">

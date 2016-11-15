@@ -18,10 +18,31 @@ body {
 	padding-bottom: 70px;
 	font-family: 'Orbitron', sans-serif;
 }
+/*********************************************************
+animated cover adapted from David Walsh
+*********************************************************/
+@keyframes animatedBackground {
+	from {
+		background-position: 50% 100%;
+	}
+	to {
+		background-position: 50% 0;
+	}
 
+}
+
+.cover{
+	background-image: url(../img/center-1733895.jpg);
+	background-repeat: repeat;
+	animation: animatedBackground 180s linear infinite;
+}
+
+/*********************************************************
+navbar
+*********************************************************/
 .navbar {
 	min-height: 10%;
-	background: dimgrey;
+	background: black;
 	opacity: 0.75;
 	background-image: url(../img/gplay.png);
 
@@ -35,12 +56,7 @@ body {
 	animation: pulsate-out 60s infinite !important;
 
 }
-header {
-	max-height: 100%;
-	display: flex;
-	flex-direction: column;
-	background-color: #111111;
-}
+
 
 @keyframes pulsate-out{ /*animation for header text*/
 	0% {

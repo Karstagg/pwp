@@ -9,7 +9,6 @@ body {
 	display: flex;
 	flex-direction: column;
 	background-color: black;
-	background-image: url(../img/Love-Coding.mp4);
 	background-position: center;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
@@ -19,28 +18,48 @@ body {
 	font-family: 'Orbitron', sans-serif;
 }
 
-.cover {
-	background: black;
-	background-image: url(../img/gplay.png);
+.cover { /*image from https://www.transparenttextures.com/*/
+	background-color: rgba(0,0,0,.6);
+	background-image: url(../img/otis-redding.png);
 	z-index:85;
 	position:absolute;
 	top:0px;
-	left:0px;
 	width:100%;
 	height:100%;
-	opacity:.2;
 }
-#main-btn {
-	z-index:90;
-	opacity: 1;
+
+.custom-btn{ /*site navigation buttons*/
+	display: inline-block;
+	font-size: 2rem;
+	cursor: pointer;
+	text-align: center;
+	text-decoration: none;
+	outline: none;
+	color: #880054 !important;
+	background-color: black;
+	border: none;
+	border-radius: 10%;
+	box-shadow: inset 0 0 10px dimgray;
+	width: 30vw;
+	transition-duration: 500ms;
+}
+.custom-btn:hover{ /*site navigation buttons*/
+	color: #C1002F !important;
+	background-color: #1A1818;
+	transition-duration: 500ms;
+}
+.custom-btn:active{ /*site navigation buttons*/
+	color: #FF3E00 !important;
+	background-color: #1A1818;
+	box-shadow: inset 0 0 5px dimgray;
+	transition-duration: 200ms;
 }
 /*********************************************************
 navbar
 *********************************************************/
-.navbar {
+.navbar { /*texture from https://www.transparenttextures.com/*/
 	min-height: 10%;
-	background: black;
-	opacity: 1;
+	background-color: rgba(0,0,0,.5);
 	background-image: url(../img/gplay.png);
 
  }
@@ -51,7 +70,6 @@ navbar
 	font-size: 4rem;
 	color: #31018C !important;
 	animation: pulsate-out 60s infinite !important;
-
 }
 
 
@@ -130,11 +148,12 @@ parallax
 }
 .parallax .bg__foo, .parallax .bg__bazz {
 	height: 100vh;
-	filter: grayscale(100%);
+
 }
 .parallax .bg__foo {
 	background-image: url(../img/center-1733895.jpg);
 	filter: grayscale(100%);
+	filter: blur(10px);
 }
 .parallax .bg__bar {
 	background-image: url(../img/center-1733895.jpg);
@@ -145,11 +164,11 @@ parallax
 }
 .parallax .bg__bazz {
 	background-image: url(../img/center-1733895.jpg);
+	filter: grayscale(100%);
 }
 .parallax .bg__break {
 	box-shadow: inset 0 0 1em #111;
 	background-image: url(../img/center-1733895.jpg);
-	filter: grayscale(100%);
 }
 .parallax .capture {
 	float: right;
@@ -190,5 +209,5 @@ a, a:visited, a:active {
 }
 
 .v-center {
-	padding-top: 50vh;
+	padding-top: 47.5vh;
 }

@@ -53,7 +53,7 @@
 
 				<div class="cover">
 					<div class="col-xs-6 col-xs-offset-3 text-center v-center">
-						<a href="#" id="main-btn" class="btn btn-default">login</a>
+						<a href="#" id="main-btn" class="btn custom-btn">login</a>
 					</div>
 				</div>
 				<div class="bg__foo"></div>

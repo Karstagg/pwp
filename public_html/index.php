@@ -53,10 +53,11 @@
 
 				<div class="cover">
 					<div class="col-xs-6 col-xs-offset-3 text-center v-center">
-						<a href="#" class="btn btn-default">login</a>
+						<a href="#" id="main-btn" class="btn btn-default">login</a>
 					</div>
 				</div>
 				<div class="bg__foo"></div>
+				<div class="bg__bar">bar</div>
 				<div class="container-fluid">
 					<div id="title-row" class="row">
 						<div class="col-xs-12">
@@ -85,7 +86,6 @@
 						</div>
 					</div>
 				</div>
-				<div class="bg__bar">bar</div>
 				<div class="bg__baz">baz</div>
 				<div class="bg__bazz">bazz</div>
 			</div>

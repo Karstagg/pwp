@@ -50,14 +50,15 @@
 		</nav>
 		<article>
 			<div class="parallax">
-
+				<div class="mobile-background"></div>
 				<div class="cover">
 					<div class="col-xs-6 col-xs-offset-3 text-center v-center">
-						<a href="#" id="main-btn" class="btn custom-btn">login</a>
+						<a href="#about-me" id="main-btn" class="btn custom-btn">login</a>
 					</div>
 				</div>
 				<div class="bg__foo"></div>
-				<div class="bg__bar">bar</div>
+				<div class="bg__bar"></div>
+				<a name="about-me"></a>
 				<div class="container-fluid">
 					<div id="title-row" class="row">
 						<div class="col-xs-12">
@@ -88,6 +89,7 @@
 				</div>
 				<div class="bg__baz">baz</div>
 				<div class="bg__bazz">bazz</div>
+
 			</div>
 		</article>
 

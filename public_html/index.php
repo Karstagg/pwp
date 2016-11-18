@@ -37,7 +37,7 @@
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
-					<a class="navbar-brand" href="#">Matt Fisher</a>
+					<a class="navbar-brand scroll-down" href="#page-top">Matt Fisher</a>
 				</div>
 				<!-- Collect the nav links, forms, and other content for toggling -->
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -48,12 +48,12 @@
 				</div><!-- /.navbar-collapse -->
 			</div><!-- /.container-fluid -->
 		</nav>
-		<article>
+		<article id="page-top">
 			<div class="parallax">
 				<div class="mobile-background"></div>
 				<div class="cover">
 					<div class="col-xs-6 col-xs-offset-3 text-center v-center">
-						<a href="#about-me" id="main-btn" class="btn custom-btn">login</a>
+						<a href="#about-me" class="btn custom-btn scroll-down">login</a>
 					</div>
 				</div>
 				<div class="bg__foo"></div>
@@ -105,7 +105,7 @@
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
-					<a class="navbar-brand" href="#">Matt Fisher</a>
+					<a class="navbar-brand scroll-up" href="#">Matt Fisher</a>
 
 				</div>
 

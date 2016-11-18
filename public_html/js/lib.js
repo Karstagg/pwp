@@ -1,13 +1,9 @@
 $(document).ready(function() {
 	var height = $(window).height(),
-		width = $(window).width(),
-		cover = $('.cover');
-
-	cover.css({"height": height, "width": width});
-
+		width = $(window).width();
 
 	$(function(){ // adapted from Edu Lomeli http://stackoverflow.com/questions/27558323/bootstrap-scroll-down-when-the-user-clicks-the-button
-		$('#main-btn').click(function() {
+		$('.scroll-down').click(function() {
 			if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
 				var target = $(this.hash);
 				target = target.length ? target : $('[name=' + this.hash.slice(1) +']');

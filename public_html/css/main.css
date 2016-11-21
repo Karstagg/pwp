@@ -65,7 +65,7 @@ navbar
 
  }
 .navbar-toggle {
-	color: lightgrey;
+	color: #1A1818;
 }
 .navbar-dark .navbar-brand {
 	font-size: 4rem;
@@ -271,19 +271,20 @@ background for mobile devices
 		background-repeat: no-repeat;
 
 	}*/
-	body {
+	.mobile-background {
 		background-image: url(../img/center-1733895.jpg);
-		background-size: 100px;
+		background-size: 1400px;
+		background-position: center;
+		height: 100vh;
 		background-repeat: no-repeat;
+		z-index: -1;
 	}
 
 	.filler {
 		height: 100vh;
 		background: transparent;
 	}
-	.fuckle{
-		padding-top: 1000px;
-	}
+
 
 
 }

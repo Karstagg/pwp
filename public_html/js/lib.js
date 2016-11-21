@@ -26,6 +26,7 @@ $(document).ready(function() {
 			}
 		});
 	});
+	//starts and stops the css animation for the navbar brand on click
 	$('.navbar-brand').click(function() {
 
 			$('.navbar-brand').addClass("animate-nav")

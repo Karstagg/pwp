@@ -52,7 +52,8 @@
 			<div class="parallax">
 
 
-				<div class="filler"></div>
+				<div class="mobile-background"></div>
+
 				<div class="cover">
 					<div class="col-xs-6 col-xs-offset-3 text-center v-center">
 						<a href="#about-me" class="btn custom-btn scroll">login</a>
@@ -107,7 +108,7 @@
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
-					<a class="navbar-brand scroll" href="#">Matt Fisher</a>
+					<a class="navbar-brand scroll" href="#page-top">Matt Fisher</a>
 
 				</div>
 

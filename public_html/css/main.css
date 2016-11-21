@@ -8,7 +8,7 @@ body {
 	max-height: 100%;
 	display: flex;
 	flex-direction: column;
-	background-color: black;
+	background-color: lightgrey;
 	background-position: center;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
@@ -21,7 +21,7 @@ body {
 .cover { /*image from https://www.transparenttextures.com/*/
 	background-color: rgba(0,0,0,.6);
 	background-image: url(../img/otis-redding.png);
-	z-index:85;
+	z-index:10;
 	top: 0;
 	position:absolute;
 	width: 100vw;
@@ -36,16 +36,17 @@ body {
 	text-decoration: none;
 	outline: none;
 	color: #880054 !important;
-	background-color: black;
+	background-color: lightgrey;
 	border: none;
 	border-radius: 10%;
-	box-shadow: inset 0 0 10px dimgray;
+	box-shadow: inset 0 0 10px #1A1818;
 	width: 30vw;
 	transition-duration: 500ms;
 }
 .custom-btn:hover{ /*site navigation buttons*/
 	color: #C1002F !important;
-	background-color: #1A1818;
+	background-color: dimgray;
+	box-shadow: inset 0 0 5px #1A1818;
 	transition-duration: 500ms;
 }
 .custom-btn:active{ /*site navigation buttons*/
@@ -59,7 +60,7 @@ navbar
 *********************************************************/
 .navbar { /*texture from https://www.transparenttextures.com/*/
 	min-height: 10%;
-	background-color: rgba(0,0,0,.5);
+	background-color: rgba(184,184,184,.5);
 	background-image: url(../img/gplay.png);
 
  }
@@ -68,8 +69,43 @@ navbar
 }
 .navbar-dark .navbar-brand {
 	font-size: 4rem;
-	color: #31018C !important;
-	animation: pulsate-out 60s infinite !important;
+	background: linear-gradient(270deg,white, white, white, white, #31018C,#31018C, #4C007E, #4C007E, #880054, #880054, #C1002F, #C1002F, #FF3E00, #FF3E00, #FF7D00, #FF7D00, #FFB300, #FFB300, #FCFC07, #FCFC07, #B7F113, #B7F113, white, white, white, white);
+);
+	background-size: 800% 800%;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+.navbar-dark .navbar-brand:hover {
+
+}
+.animate-nav {
+	background: linear-gradient(270deg,white, white, white, white, #31018C,#31018C, #4C007E, #4C007E, #880054, #880054, #C1002F, #C1002F, #FF3E00, #FF3E00, #FF7D00, #FF7D00, #FFB300, #FFB300, #FCFC07, #FCFC07, #B7F113, #B7F113, white, white, white, white);
+);
+	background-size: 800% 800%;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	-webkit-animation: bg-shift 4s;
+
+}
+
+@keyframes bg-shift {
+	0%{
+		background-position:0% 50%
+	}
+	50%{
+		background-position:100% 50%
+	}
+	100%{
+		background-position:0% 50%
+	}
+}
+@keyframes fade-to-black {
+	0%{
+		color: #31018C;
+	}
+	100%{
+		color: #1A1818;
+	}
 }
 
 
@@ -135,6 +171,12 @@ navbar
 parallax only for large screens
 **********************************************************/
 @media (min-width: 750px) {
+	.mobile-background{
+		display: none;
+	}
+	.filler {
+		display: none;
+	}
 	/*parallax effect by david walsh https://davidwalsh.name/parallax*/
 	.parallax [class*="bg__"] {
 		position: relative;
@@ -221,14 +263,28 @@ parallax only for large screens
 background for mobile devices
 **********************************************************/
 @media (max-width: 750px) {
-	.mobile-background {
+	/*.mobile-background {
 		height: 87vh;
 		background-image: url(../img/center-1733895.jpg);
 		background-attachment: fixed;
 		background-position: center;
 		background-repeat: no-repeat;
 
+	}*/
+	body {
+		background-image: url(../img/center-1733895.jpg);
+		background-size: 100px;
+		background-repeat: no-repeat;
 	}
+
+	.filler {
+		height: 100vh;
+		background: transparent;
+	}
+	.fuckle{
+		padding-top: 1000px;
+	}
+
 
 }
 a, a:visited, a:active {

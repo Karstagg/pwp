@@ -37,7 +37,7 @@
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
-					<a class="navbar-brand scroll-down" href="#page-top">Matt Fisher</a>
+					<a class="navbar-brand scroll" href="#page-top">Matt Fisher</a>
 				</div>
 				<!-- Collect the nav links, forms, and other content for toggling -->
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -50,10 +50,12 @@
 		</nav>
 		<article id="page-top">
 			<div class="parallax">
-				<div class="mobile-background"></div>
+
+
+				<div class="filler"></div>
 				<div class="cover">
 					<div class="col-xs-6 col-xs-offset-3 text-center v-center">
-						<a href="#about-me" class="btn custom-btn scroll-down">login</a>
+						<a href="#about-me" class="btn custom-btn scroll">login</a>
 					</div>
 				</div>
 				<div class="bg__foo"></div>
@@ -87,15 +89,15 @@
 						</div>
 					</div>
 				</div>
-				<div class="bg__baz">baz</div>
-				<div class="bg__bazz">bazz</div>
+				<div class="bg__baz"></div>
+				<div class="bg__bazz"></div>
 
 			</div>
 		</article>
 
 	</body>
 	<footer>
-		<nav class="navbar navbar-dark bg-inverse navbar-fixed-bottom">
+		<nav class="navbar navbar-dark bg-inverse navbar-fixed-bottom inanimate-nav">
 			<div class="container-fluid">
 				<!-- Brand and toggle get grouped for better mobile display -->
 				<div class="navbar-header">
@@ -105,7 +107,7 @@
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
-					<a class="navbar-brand scroll-up" href="#">Matt Fisher</a>
+					<a class="navbar-brand scroll" href="#">Matt Fisher</a>
 
 				</div>
 

@@ -56,13 +56,13 @@
 
 				<div class="cover">
 					<div class="col-xs-6 col-xs-offset-3 text-center v-center">
-						<a href="#about-me" class="btn custom-btn scroll">login</a>
+						<a href="#about-me" class="btn custom-btn scroll">Enter</a>
 					</div>
 				</div>
 				<div class="bg__foo"></div>
 				<div class="bg__bar"></div>
 				<a name="about-me"></a>
-				<div class="container-fluid">
+				<div class="container-fluid content">
 					<div id="title-row" class="row">
 						<div class="col-xs-12">
 							<div class="pad-down text-center">

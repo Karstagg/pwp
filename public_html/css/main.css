@@ -279,6 +279,7 @@ background for mobile devices
 		height: 100vh;
 		background-repeat: no-repeat;
 		z-index: -1;
+		filter: blur(10px);
 	}
 
 	.filler {
@@ -288,7 +289,9 @@ background for mobile devices
 	.v-center { /*for centering things vertically mobile*/
 		padding-top: 47vh;
 	}
-
+	.content{
+		padding-bottom: 15vh;
+	}
 
 }
 a, a:visited, a:active {

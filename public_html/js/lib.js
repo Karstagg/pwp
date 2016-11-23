@@ -9,18 +9,10 @@ $(document).ready(function() {
 				var target = $(this.hash);
 				target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
 				if (target.length) {
-					if (width < 751) {
 						$('html,body').animate({
-							scrollTop: (target.offset().top - 160) // adjust this according to your content
+							scrollTop: (target.offset().top - height*0.30) // adjust this according to your content
 
 						}, 1000);
-					}
-					else {
-						$('html,body').animate({
-							scrollTop: (target.offset().top - 406) // adjust this according to your content
-
-						}, 1000);
-					}
 					return false;
 				}
 			}

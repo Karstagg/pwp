@@ -29,4 +29,22 @@ $(document).ready(function() {
 
 	});
 
+
 });
+
+//gets a greeting time based on the user's location
+function greetingTime() {
+	var date = new Date();
+	var time = date.getHours();
+	var timeOfDay;
+	if (time < 12 && time > 2) {
+		timeOfDay = "morning";
+	}
+	else if (time > 12 && time < 17) {
+		timeOfDay = "afternoon";
+	}
+	else {
+		timeOfDay = "evening"
+	}
+	return document.write(timeOfDay);
+}

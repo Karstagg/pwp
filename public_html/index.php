@@ -67,7 +67,7 @@
 						<div class="col-xs-12">
 							<div class="pad-down text-center">
 								<div id="pulse" class="pulse">
-									<h1 id="kiteCrypt-title" class="fade-in">KiteCrypt</h1>
+									<h1 id="kiteCrypt-title" class="fade-in"><script>greetingTime()</script></h1>
 								</div>
 								<p id="slogan" class="fade-in-out">A secure chat site for our insecure world</p>
 								<p id="sign-up" class="pad-down2 fade-in-2">New? <a href="">Sign up!</a></p>

@@ -1,4 +1,25 @@
+
+
+
+
 $(document).ready(function() {
+
+	//gets a greeting time based on the user's location
+
+	var date = new Date();
+	var time = date.getHours();
+	var timeOfDay;
+	if (time < 12 && time > 2) {
+		timeOfDay = "morning";
+	}
+	else if (time > 12 && time < 17) {
+		timeOfDay = "afternoon";
+	}
+	else {
+		timeOfDay = "evening"
+	}
+
+	//determines the size of the viewport
 	var height = $(window).height(),
 		width = $(window).width();
 
@@ -29,22 +50,21 @@ $(document).ready(function() {
 
 	});
 
+	switch (timeOfDay) {
+		case "morning":
+			$("#greeting").load("content-en.php #morning-en");
+			break;
+		case "afternoon":
+			$("#greeting").load("content-en.php #afternoon-en");
+			break;
+		case "evening":
+			$("#greeting").load("content-en.php #evening-en");
+			break;
+	}
+
+	$("#about").load("content-en.php #about-me-en");
+
 
 });
 
-//gets a greeting time based on the user's location
-function greetingTime() {
-	var date = new Date();
-	var time = date.getHours();
-	var timeOfDay;
-	if (time < 12 && time > 2) {
-		timeOfDay = "morning";
-	}
-	else if (time > 12 && time < 17) {
-		timeOfDay = "afternoon";
-	}
-	else {
-		timeOfDay = "evening"
-	}
-	return document.write(timeOfDay);
-}
+

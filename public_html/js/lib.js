@@ -3,7 +3,33 @@
 
 
 $(document).ready(function() {
-	document.cookie = "lang=en";
+
+	//adapted from http://www.quirksmode.org/js/cookies.html
+	//reads cookie value
+	function readCookie(name) {
+		var nameEQ = name + "=";
+		var ca = document.cookie.split(';');
+		for(var i = 0; i < ca.length; i++) {
+			var c = ca[i];
+			while(c.charAt(0) == ' ') c = c.substring(1, c.length);
+			if(c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length);
+		}
+		return null;
+	}
+	if (readCookie("lang") != null) {
+		document.getElementById("cookie-time").innerHTML=readCookie("lang");
+	}
+	else {
+		document.cookie = "lang=en";
+	}
+	$("input[type=radio]").click(function () {
+		if ($("input[name=lang]:checked")) {
+			var value = $("input[name=lang]:checked").val();
+			document.cookie = "lang="+'"'+value+'"';
+			document.getElementById("cookie-time").innerHTML=readCookie("lang")
+		}
+	});
+
 
 	//gets a greeting time based on the user's location
 

@@ -315,3 +315,9 @@ a, a:visited, a:active {
 }
 
 }
+
+input[type=radio] {
+	border: 0px;
+	height: 2rem;
+	width: 2rem;
+}

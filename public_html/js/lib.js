@@ -34,8 +34,37 @@ $(document).ready(function() {
 			$("#"+value+"_label").addClass("label_select");
 		}
 	});
-	//trigger a click to determine which material to load (in the interest of not writing the same code twice)
-	$("input[type=radio]").trigger("click");
+
+	//gets a greeting time based on the user's location
+
+	var date = new Date();
+	var time = date.getHours();
+	var timeOfDay;
+	if (time < 12 && time > 2) {
+		timeOfDay = "morning";
+	}
+	else if (time > 12 && time < 17) {
+		timeOfDay = "afternoon";
+	}
+	else {
+		timeOfDay = "evening"
+	}
+	//checks to see what language is selected and loads that info when the page loads
+	switch(timeOfDay) {
+		case "morning":
+			$("#greeting").load("content-" + readCookie("lang") + ".php #morning-" + readCookie("lang"));
+			break;
+		case "afternoon":
+			$("#greeting").load("content-" + readCookie("lang") + ".php #afternoon-" + readCookie("lang"));
+			break;
+		case "evening":
+			$("#greeting").load("content-" + readCookie("lang") + ".php #evening-" + readCookie("lang"));
+			break;
+	}
+
+	$("#intro").load("content-" + readCookie("lang") + ".php #intro-" + readCookie("lang"));
+
+	//checks the selected language when a radio button is clicked and loads the appropriate info
 	$("input[type=radio]").click(function () {
 		switch(timeOfDay) {
 			case "morning":
@@ -52,22 +81,6 @@ $(document).ready(function() {
 		$("#intro").load("content-" + readCookie("lang") + ".php #intro-" + readCookie("lang"));
 	});
 
-
-
-	//gets a greeting time based on the user's location
-
-	var date = new Date();
-	var time = date.getHours();
-	var timeOfDay;
-	if (time < 12 && time > 2) {
-		timeOfDay = "morning";
-	}
-	else if (time > 12 && time < 17) {
-		timeOfDay = "afternoon";
-	}
-	else {
-		timeOfDay = "evening"
-	}
 
 	//determines the size of the viewport
 	var height = $(window).height(),

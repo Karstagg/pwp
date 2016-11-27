@@ -74,7 +74,7 @@ navbar
 }
 .navbar-dark .navbar-brand {
 	font-size: 4rem;
-	background: linear-gradient(270deg,white, white, white, white, #31018C,#31018C, #4C007E, #4C007E, #880054, #880054, #C1002F, #C1002F, #FF3E00, #FF3E00, #FF7D00, #FF7D00, #FFB300, #FFB300, #FCFC07, #FCFC07, #B7F113, #B7F113, white, white, white, white);
+	background: linear-gradient(270deg,black, black, black, black, #31018C,#31018C, #4C007E, #4C007E, #880054, #880054, #C1002F, #C1002F, #FF3E00, #FF3E00, #FF7D00, #FF7D00, #FFB300, #FFB300, #FCFC07, #FCFC07, #B7F113, #B7F113, black, black, black, black);
 );
 	background-size: 800% 800%;
 	-webkit-background-clip: text;
@@ -84,7 +84,7 @@ navbar
 
 }
 .animate-nav {
-	background: linear-gradient(270deg,white, white, white, white, #31018C,#31018C, #4C007E, #4C007E, #880054, #880054, #C1002F, #C1002F, #FF3E00, #FF3E00, #FF7D00, #FF7D00, #FFB300, #FFB300, #FCFC07, #FCFC07, #B7F113, #B7F113, white, white, white, white);
+	background: linear-gradient(270deg,black, black, black, black, #31018C,#31018C, #4C007E, #4C007E, #880054, #880054, #C1002F, #C1002F, #FF3E00, #FF3E00, #FF7D00, #FF7D00, #FFB300, #FFB300, #FCFC07, #FCFC07, #B7F113, #B7F113, black, black, black, black);
 );
 	background-size: 800% 800%;
 	-webkit-background-clip: text;

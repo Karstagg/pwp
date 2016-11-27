@@ -30,11 +30,28 @@ $(document).ready(function() {
 		if ($("input[name=lang]:checked")) {
 			var value = $("input[name=lang]:checked").val();
 			document.cookie = "lang="+'"'+value+'"';
-			document.getElementById("cookie-time").innerHTML=readCookie("lang")
 			$(".lang_label").removeClass("label_select");
-			$('#'+value+"_label").addClass("label_select");
+			$("#"+value+"_label").addClass("label_select");
 		}
 	});
+	//trigger a click to determine which material to load (in the interest of not writing the same code twice)
+	$("input[type=radio]").trigger("click");
+	$("input[type=radio]").click(function () {
+		switch(timeOfDay) {
+			case "morning":
+				$("#greeting").load("content-" + readCookie("lang") + ".php #morning-" + readCookie("lang"));
+				break;
+			case "afternoon":
+				$("#greeting").load("content-" + readCookie("lang") + ".php #afternoon-" + readCookie("lang"));
+				break;
+			case "evening":
+				$("#greeting").load("content-" + readCookie("lang") + ".php #evening-" + readCookie("lang"));
+				break;
+		}
+
+		$("#intro").load("content-" + readCookie("lang") + ".php #intro-" + readCookie("lang"));
+	});
+
 
 
 	//gets a greeting time based on the user's location
@@ -83,19 +100,6 @@ $(document).ready(function() {
 
 	});
 
-	switch (timeOfDay) {
-		case "morning":
-			$("#greeting").load("content-en.php #morning-en");
-			break;
-		case "afternoon":
-			$("#greeting").load("content-en.php #afternoon-en");
-			break;
-		case "evening":
-			$("#greeting").load("content-en.php #evening-en");
-			break;
-	}
-
-	$("#intro").load("content-en.php #intro-en");
 
 
 });

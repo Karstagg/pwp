@@ -13,6 +13,7 @@
 		<!-- add custom css after bootstrap-->
 		<link rel="stylesheet" href="css/main.css" type="text/css" />
 		<link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+		<link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.min.css">
 		<!-- HTML5 shiv and Respond.js for IE8 support of HTML5 elements and media queries -->
 		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 		<!--[if lt IE 9]>
@@ -80,7 +81,8 @@
 					<button type="button" class="navbar-toggle glyphicon glyphicon-menu-hamburger" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2" aria-expanded="false">
 						<span class="sr-only">Toggle navigation</span>
 					</button>
-					<button type="button" class="navbar-toggle glyphicon glyphicon-menu-hamburger" data-toggle="collapse" data-target="#bs-example-navbar-collapse-3" aria-expanded="false">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-3" aria-expanded="false"><i
+							class="fa fa-user"></i>
 						<span class="sr-only">Toggle navigation</span>
 					</button>
 

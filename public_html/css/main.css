@@ -303,8 +303,11 @@ background for mobile devices
 .pad-down {
 	padding-top:20px;
 }
+.content{
+	padding-bottom:20px;
+}
 a, a:visited, a:active {
-	color: #f66;
+	color: #880054;
 }
 @media (min-width: 750px){
 .v-center { /*for centering things vertically full screen*/

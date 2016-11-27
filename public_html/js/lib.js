@@ -3,6 +3,7 @@
 
 
 $(document).ready(function() {
+	document.cookie = "lang=en";
 
 	//gets a greeting time based on the user's location
 
@@ -62,7 +63,7 @@ $(document).ready(function() {
 			break;
 	}
 
-	$("#about").load("content-en.php #about-me-en");
+	$("#intro").load("content-en.php #intro-en");
 
 
 });

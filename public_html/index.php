@@ -42,7 +42,7 @@
 				<!-- Collect the nav links, forms, and other content for toggling -->
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 					<ul class="nav navbar-nav navbar-right">
-						<li><a href="#">Link1</a></li>
+						<li><a href="#intro" class="scroll">Intro</a></li>
 						<li><a href="#">link2</a></li>
 					</ul>
 				</div><!-- /.navbar-collapse -->
@@ -56,16 +56,15 @@
 
 				<div class="cover">
 					<div class="col-xs-6 col-xs-offset-3 text-center v-center">
-						<a href="#about-me" class="btn custom-btn scroll">Enter</a>
+						<a href="#intro" class="btn custom-btn scroll">Enter</a>
 					</div>
 				</div>
 				<div class="bg__foo"></div>
 				<div class="bg__bar"></div>
-				<a name="about-me"></a>
-
+				<a name="intro"></a>
 				<div id="greeting" class="container-fluid pad-down"></div>
-				<div id="about" class="container-fluid pad-down content"></div>
-
+				<div id="intro" class="container-fluid pad-down content"></div>
+				<script>document.write(document.cookie)</script>
 				<div class="bg__baz"></div>
 				<div class="bg__bazz"></div>
 
@@ -80,18 +79,27 @@
 				<div class="navbar-header">
 					<button type="button" class="navbar-toggle glyphicon glyphicon-menu-hamburger" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2" aria-expanded="false">
 						<span class="sr-only">Toggle navigation</span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
 					</button>
+					<button type="button" class="navbar-toggle glyphicon glyphicon-menu-hamburger" data-toggle="collapse" data-target="#bs-example-navbar-collapse-3" aria-expanded="false">
+						<span class="sr-only">Toggle navigation</span>
+					</button>
+
 					<a class="navbar-brand scroll" href="#page-top">Matt Fisher</a>
 
 				</div>
-
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-3">
+					<ul class="nav navbar-nav navbar-center">
+						<li>
+							<input name="en" id="en" type="radio" value="checked">
+						</li>
+						<li><input type="radio"></li>
+						<li><input type="radio"></li>
+					</ul>
+				</div>
 				<!-- Collect the nav links, forms, and other content for toggling -->
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
 					<ul class="nav navbar-nav navbar-right">
-						<li><a href="#">Link1</a></li>
+						<li><a href="#intro" class="scroll">Intro</a></li>
 						<li><a href="#">link2</a></li>
 					</ul>
 				</div><!-- /.navbar-collapse -->

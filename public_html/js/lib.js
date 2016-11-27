@@ -12,21 +12,27 @@ $(document).ready(function() {
 		for(var i = 0; i < ca.length; i++) {
 			var c = ca[i];
 			while(c.charAt(0) == ' ') c = c.substring(1, c.length);
-			if(c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length);
+			if(c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length).replace(/"/g, '');
 		}
 		return null;
 	}
-	if (readCookie("lang") != null) {
-		document.getElementById("cookie-time").innerHTML=readCookie("lang");
+	//changes content based on language selection cookie
+	if (readCookie("lang") === null) {
+		document.cookie = "lang=en";
+		$("#en_label").addClass("label_select");
 	}
 	else {
-		document.cookie = "lang=en";
+		$('#'+readCookie("lang")+"_label").addClass("label_select");
 	}
+
+	//changes the value of the language selection cookie
 	$("input[type=radio]").click(function () {
 		if ($("input[name=lang]:checked")) {
 			var value = $("input[name=lang]:checked").val();
 			document.cookie = "lang="+'"'+value+'"';
 			document.getElementById("cookie-time").innerHTML=readCookie("lang")
+			$(".lang_label").removeClass("label_select");
+			$('#'+value+"_label").addClass("label_select");
 		}
 	});
 
@@ -69,7 +75,7 @@ $(document).ready(function() {
 	//starts and stops the css animation for the navbar brand on click
 	$('.navbar-brand').click(function() {
 
-			$('.navbar-brand').addClass("animate-nav")
+			$('.navbar-brand').addClass("animate-nav");
 
 		setTimeout(function() {
 			$('.navbar-brand').removeClass("animate-nav");

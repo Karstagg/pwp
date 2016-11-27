@@ -100,11 +100,11 @@
 				</div>
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-3">
 					<div class="nav navbar-nav navbar-center text-center">
-						<label for="en"><h1>EN</h1></label>
-						<input name="lang" id="en" type="radio" value="en" checked="checked">
-						<label for="jp"><h1>JP</h1></label>
+						<label for="en" class="lang_label" id="en_label"><h1>EN</h1></label>
+						<input name="lang" id="en" type="radio" value="en">
+						<label for="jp" class="lang_label" id="jp_label"><h1>JP</h1></label>
 						<input name="lang" id="jp" type="radio" value="jp">
-						<label for="de"><h1>DE</h1></label>
+						<label for="de" class="lang_label" id="de_label"><h1>DE</h1></label>
 						<input name="lang" id="de" type="radio" value="de">
 					</div>
 				</div>

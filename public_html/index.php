@@ -44,7 +44,7 @@
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
-					<a class="navbar-brand scroll" href="#page-top">Matt Fisher</a>
+					<a class="navbar-brand scroll" href="#page-top">m-fisher.net</a>
 				</div>
 				<!-- Collect the nav links, forms, and other content for toggling -->
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -95,7 +95,7 @@
 						<span class="sr-only">Toggle navigation</span>
 					</button>
 
-					<a class="navbar-brand scroll" href="#page-top">Matt Fisher</a>
+					<a class="navbar-brand scroll" href="#page-top">m-fisher.net</a>
 
 				</div>
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-3">

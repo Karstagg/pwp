@@ -2,7 +2,7 @@
 <html lang="de">
 	<head>
 		<meta charset="utf-8">
-		<title>Matthew R. Fisher - content</title>
+		<title>Matthew R. Fisher - content-de</title>
 		<script src="js/lib.js"></script>
 	</head>
 	<body>

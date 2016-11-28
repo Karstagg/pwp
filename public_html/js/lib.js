@@ -5,7 +5,7 @@
 $(document).ready(function() {
 
 	//adapted from http://www.quirksmode.org/js/cookies.html
-	//reads cookie value
+	//reads cookie readCookie("lang")
 	function readCookie(name) {
 		var nameEQ = name + "=";
 		var ca = document.cookie.split(';');
@@ -16,27 +16,32 @@ $(document).ready(function() {
 		}
 		return null;
 	}
+	
 	//changes content based on language selection cookie
-	if (readCookie("lang") === null) {
+	if (readCookie("lang") === null || readCookie("lang") == "undefined" ) {
 		document.cookie = "lang=en";
-		$("#en_label").addClass("label_select");
+		$(".en_label").addClass("label_select");
 	}
 	else {
-		$('#'+readCookie("lang")+"_label").addClass("label_select");
+		$("."+readCookie("lang")+"_label").addClass("label_select");
 	}
+	
 
-	//changes the value of the language selection cookie
-	$("input[type=radio]").click(function () {
+	//changes the readCookie("lang") of the language selection cookie
+	$("input[name=lang]").click(function () {
 		if ($("input[name=lang]:checked")) {
 			var value = $("input[name=lang]:checked").val();
 			document.cookie = "lang="+'"'+value+'"';
-			$(".lang_label").removeClass("label_select");
-			$("#"+value+"_label").addClass("label_select");
+		}
+	});
+	$("input[name=lang2]").click(function () {
+		if ($("input[name=lang2]:checked")) {
+			var value = $("input[name=lang2]:checked").val();
+			document.cookie = "lang="+'"'+value+'"';
 		}
 	});
 
 	//gets a greeting time based on the user's location
-
 	var date = new Date();
 	var time = date.getHours();
 	var timeOfDay;
@@ -49,6 +54,7 @@ $(document).ready(function() {
 	else {
 		timeOfDay = "evening"
 	}
+
 	//checks to see what language is selected and loads that info when the page loads
 	switch(timeOfDay) {
 		case "morning":
@@ -66,6 +72,9 @@ $(document).ready(function() {
 
 	//checks the selected language when a radio button is clicked and loads the appropriate info
 	$("input[type=radio]").click(function () {
+
+		$(".lang_label").removeClass("label_select");
+		$("."+readCookie("lang")+"_label").addClass("label_select");
 		switch(timeOfDay) {
 			case "morning":
 				$("#greeting").load("content-" + readCookie("lang") + ".php #morning-" + readCookie("lang"));
@@ -77,7 +86,6 @@ $(document).ready(function() {
 				$("#greeting").load("content-" + readCookie("lang") + ".php #evening-" + readCookie("lang"));
 				break;
 		}
-
 		$("#intro").load("content-" + readCookie("lang") + ".php #intro-" + readCookie("lang"));
 	});
 

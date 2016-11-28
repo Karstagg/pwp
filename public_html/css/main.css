@@ -67,7 +67,6 @@ navbar
 	min-height: 10%;
 	background-color: rgba(184,184,184,.5);
 	background-image: url(../img/gplay.png);
-
  }
 .navbar-toggle {
 	color: #1A1818;
@@ -297,17 +296,22 @@ background for mobile devices
 	.content{
 		padding-bottom: 15vh;
 	}
-
+	.last{
+		padding-bottom: 130%;
+	}
+	.label_select {
+		color: #880054;
+	}
 }
 
 .pad-down {
 	padding-top:20px;
 }
-.content{
-	padding-bottom: 130%;
-}
+
 a  {
 	color: #1A1818;
+	font-size: 2rem;
+	font-weight: 600;
 }
 a:visited, a:active {
 	color: #880054;
@@ -330,4 +334,9 @@ input[type=radio] {
 }
 .label_select {
 	color: #880054;
+}
+.transparent-btn {
+	padding-top: 10px;
+	background-color: transparent;
+	border: none;
 }

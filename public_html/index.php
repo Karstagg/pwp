@@ -46,9 +46,19 @@
 					</button>
 					<a class="navbar-brand scroll" href="#page-top">m-fisher.net</a>
 				</div>
-				<!-- Collect the nav links, forms, and other content for toggling -->
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 					<ul class="nav navbar-nav navbar-right">
+						<li>
+							<button type="button" class="transparent-btn" data-toggle="dropdown"><i class="fa fa-language fa-2x" aria-hidden="true"></i></button>
+							<ul class="dropdown-menu">
+								<li><label for="en2" class="lang_label en_label"><h1>EN</h1></label>
+									<input name="lang2" id="en2" type="radio" value="en"></li>
+								<li><label for="jp2" class="lang_label jp_label"><h1>JP</h1></label>
+									<input name="lang2" id="jp2" type="radio" value="jp"></li>
+								<li><label for="de2" class="lang_label de_label"><h1>DE</h1></label>
+									<input name="lang2" id="de2" type="radio" value="de"></li>
+							</ul>
+						</li>
 						<li><a href="#intro" class="scroll">Intro</a></li>
 						<li><a href="#">link2</a></li>
 					</ul>
@@ -70,7 +80,7 @@
 				<div class="bg__bar"></div>
 				<a name="intro"></a>
 				<div id="greeting" class="container-fluid pad-down"></div>
-				<div id="intro" class="container-fluid pad-down content"></div>
+				<div id="intro" class="container-fluid pad-down last"></div>
 				<div id="cookie-time"></div>
 				<div class="bg__baz"></div>
 				<div class="bg__bazz"></div>
@@ -90,8 +100,7 @@
 						<span class="sr-only">Toggle navigation</span>
 					</button>
 					<button type="button" class="navbar-toggle" data-toggle="collapse"
-							  data-target="#bs-example-navbar-collapse-3" aria-expanded="false"><i class="fa fa-language fa-2x"
-																														  aria-hidden="true"></i>
+							  data-target="#bs-example-navbar-collapse-3" aria-expanded="false"><i class="fa fa-language fa-2x" aria-hidden="true"></i>
 						<span class="sr-only">Toggle navigation</span>
 					</button>
 
@@ -100,11 +109,11 @@
 				</div>
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-3">
 					<div class="nav navbar-nav navbar-center text-center">
-						<label for="en" class="lang_label" id="en_label"><h1>EN</h1></label>
+						<label for="en" class="lang_label en_label"><h1>EN</h1></label>
 						<input name="lang" id="en" type="radio" value="en">
-						<label for="jp" class="lang_label" id="jp_label"><h1>JP</h1></label>
+						<label for="jp" class="lang_label jp_label"><h1>JP</h1></label>
 						<input name="lang" id="jp" type="radio" value="jp">
-						<label for="de" class="lang_label" id="de_label"><h1>DE</h1></label>
+						<label for="de" class="lang_label de_label"><h1>DE</h1></label>
 						<input name="lang" id="de" type="radio" value="de">
 					</div>
 				</div>

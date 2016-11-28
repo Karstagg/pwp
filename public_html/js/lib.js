@@ -11,8 +11,8 @@ $(document).ready(function() {
 		var ca = document.cookie.split(';');
 		for(var i = 0; i < ca.length; i++) {
 			var c = ca[i];
-			while(c.charAt(0) == ' ') c = c.substring(1, c.length);
-			if(c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length).replace(/"/g, '');
+			while(c.charAt(0) == " ") c = c.substring(1, c.length);
+			if(c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length).replace(/"/g, "");
 		}
 		return null;
 	}
@@ -55,20 +55,20 @@ $(document).ready(function() {
 		timeOfDay = "evening"
 	}
 
-	//checks to see what language is selected and loads that info when the page loads
+	//checks a cookie to see what language is selected and loads that info when the page loads
 	switch(timeOfDay) {
 		case "morning":
-			$("#greeting").load("content-" + readCookie("lang") + ".php #morning-" + readCookie("lang"));
+			$("#greeting").load("php/content-" + readCookie("lang") + ".php #morning-" + readCookie("lang"));
 			break;
 		case "afternoon":
-			$("#greeting").load("content-" + readCookie("lang") + ".php #afternoon-" + readCookie("lang"));
+			$("#greeting").load("php/content-" + readCookie("lang") + ".php #afternoon-" + readCookie("lang"));
 			break;
 		case "evening":
-			$("#greeting").load("content-" + readCookie("lang") + ".php #evening-" + readCookie("lang"));
+			$("#greeting").load("php/content-" + readCookie("lang") + ".php #evening-" + readCookie("lang"));
 			break;
 	}
-	$("#enter-btn").load("content-" + readCookie("lang") + ".php #enter-" + readCookie("lang"));
-	$("#intro").load("content-" + readCookie("lang") + ".php #intro-" + readCookie("lang"));
+	$("#enter-btn").load("php/content-" + readCookie("lang") + ".php #enter-" + readCookie("lang"));
+	$("#intro").load("php/content-" + readCookie("lang") + ".php #intro-" + readCookie("lang"));
 
 	//checks the selected language when a radio button is clicked and loads the appropriate info
 	$("input[type=radio]").click(function () {
@@ -77,17 +77,17 @@ $(document).ready(function() {
 		$("."+readCookie("lang")+"_label").addClass("label_select");
 		switch(timeOfDay) {
 			case "morning":
-				$("#greeting").load("content-" + readCookie("lang") + ".php #morning-" + readCookie("lang"));
+				$("#greeting").load("php/content-" + readCookie("lang") + ".php #morning-" + readCookie("lang"));
 				break;
 			case "afternoon":
-				$("#greeting").load("content-" + readCookie("lang") + ".php #afternoon-" + readCookie("lang"));
+				$("#greeting").load("php/content-" + readCookie("lang") + ".php #afternoon-" + readCookie("lang"));
 				break;
 			case "evening":
-				$("#greeting").load("content-" + readCookie("lang") + ".php #evening-" + readCookie("lang"));
+				$("#greeting").load("php/content-" + readCookie("lang") + ".php #evening-" + readCookie("lang"));
 				break;
 		}
-		$("#enter-btn").load("content-" + readCookie("lang") + ".php #enter-" + readCookie("lang"));
-		$("#intro").load("content-" + readCookie("lang") + ".php #intro-" + readCookie("lang"));
+		$("#enter-btn").load("php/content-" + readCookie("lang") + ".php #enter-" + readCookie("lang"));
+		$("#intro").load("php/content-" + readCookie("lang") + ".php #intro-" + readCookie("lang"));
 	});
 
 

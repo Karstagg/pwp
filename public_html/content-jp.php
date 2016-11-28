@@ -6,7 +6,8 @@
 		<script src="js/lib.js"></script>
 	</head>
 	<body>
-		<div id="morning-jp"><h1>おはようございます！</h1></div>
+		<div id="enter-jp">入る</div>
+		<div id="morning-jp"><h3>おはようございます！</h3></div>
 		<div id="afternoon-jp"><h1>こんにちは！</h1></div>
 		<div id="evening-jp"><h1>こんばんは！</h1></div>
 		<div id="intro-jp"><p>フィシャー・マットと申します。ウェブデブぇローパーです。自分のページとポートフォリオです。他の作を見て、現行のプロジェクトについて読んで、連絡して下さい。</p></div>

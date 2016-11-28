@@ -67,7 +67,7 @@ $(document).ready(function() {
 			$("#greeting").load("content-" + readCookie("lang") + ".php #evening-" + readCookie("lang"));
 			break;
 	}
-
+	$("#enter-btn").load("content-" + readCookie("lang") + ".php #enter-" + readCookie("lang"));
 	$("#intro").load("content-" + readCookie("lang") + ".php #intro-" + readCookie("lang"));
 
 	//checks the selected language when a radio button is clicked and loads the appropriate info
@@ -86,6 +86,7 @@ $(document).ready(function() {
 				$("#greeting").load("content-" + readCookie("lang") + ".php #evening-" + readCookie("lang"));
 				break;
 		}
+		$("#enter-btn").load("content-" + readCookie("lang") + ".php #enter-" + readCookie("lang"));
 		$("#intro").load("content-" + readCookie("lang") + ".php #intro-" + readCookie("lang"));
 	});
 

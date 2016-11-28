@@ -76,7 +76,7 @@
 
 				<div class="cover">
 					<div class="col-xs-6 col-xs-offset-3 text-center v-center">
-						<a href="#intro" class="btn custom-btn scroll">Enter</a>
+						<a href="#intro" class="btn custom-btn scroll"><div id="enter-btn"></div></a>
 					</div>
 				</div>
 				<div class="bg__foo"></div>

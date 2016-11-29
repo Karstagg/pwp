@@ -277,7 +277,7 @@ background for mobile devices
 
 	}*/
 	.mobile-background {
-		background-image: url(../img/center-1733895.jpg);
+		background-image: url(../img/center-mobile.jpg);
 		background-size: cover;
 		background-position: center;
 		background-attachment: fixed;
@@ -297,9 +297,16 @@ background for mobile devices
 	.content{
 		padding-bottom: 15vh;
 	}
-	.last{
-		padding-bottom: 130%;
+
+	@media (max-width: 500px) {
+		.last {
+			padding-bottom: 100%;
+		}
 	}
+	.last {
+		padding-bottom: 30%;
+	}
+
 	.label_select {
 		color: #880054;
 	}

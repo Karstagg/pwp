@@ -96,21 +96,23 @@ $(document).ready(function() {
 		width = $(window).width();
 
 	//function to handle scrolling on button click
-	$(function(){ // adapted from Edu Lomeli http://stackoverflow.com/questions/27558323/bootstrap-scroll-down-when-the-user-clicks-the-button
-		$('.scroll').click(function() {
-			if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-				var target = $(this.hash);
-				target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-				if (target.length) {
+
+		$(function() { // adapted from Edu Lomeli http://stackoverflow.com/questions/27558323/bootstrap-scroll-down-when-the-user-clicks-the-button
+			$('.scroll').click(function() {
+				if(location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+					var target = $(this.hash);
+					target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+					if(target.length) {
 						$('html,body').animate({
-							scrollTop: (target.offset().top - height*0.30) // adjust this according to your content
+							scrollTop: (target.offset().top - height * 0.55) // adjust this according to your content
 
 						}, 1000);
-					return false;
+						return false;
+					}
 				}
-			}
+			});
 		});
-	});
+
 	//starts and stops the css animation for the navbar brand on click
 	$('.navbar-brand').click(function() {
 

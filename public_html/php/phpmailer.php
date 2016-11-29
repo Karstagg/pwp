@@ -7,7 +7,7 @@ require_once(dirname(__DIR__, 2) . "/vendor/autoload.php");
 /**
  * require mailer-config.php
  **/
-require_once("mail-config.php");
+require_once("../../mail-config.php");
 
 // verify user's reCAPTCHA input
 $recaptcha = new \ReCaptcha\ReCaptcha($secret);

@@ -7,7 +7,7 @@
 	</head>
 	<body>
 		<!--greeting and info-->
-		<div id="enter-de">Zugang</div>
+		<div id="enter-de" class="german">Zugang</div>
 		<div id="morning-de"><h3>Guten Morgen!</h3></div>
 		<div id="afternoon-de"><h1>Guten Tag!</h1></div>
 		<div id="evening-de"><h1>Guten Abend!</h1></div>
@@ -18,5 +18,7 @@
 		<div id="mail-de">E-Mail</div>
 		<div id="subject-de">Betreff</div>
 		<div id="message-de">Nachricht</div>
+		<div id="send-de" class="german">Versenden</div>
+		<div id="reset-de" class="german">Zurücksetzen</div>
 	</body>
 </html>

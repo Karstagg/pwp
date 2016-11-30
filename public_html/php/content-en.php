@@ -18,5 +18,7 @@
 		<div id="mail-en">Email</div>
 		<div id="subject-en">Subject</div>
 		<div id="message-en">Message</div>
+		<div id="send-en">Send</div>
+		<div id="reset-en">Reset</div>
 	</body>
 </html>

@@ -129,8 +129,8 @@
 					<!-- reCAPTCHA -->
 					<div class="g-recaptcha" data-sitekey="--YOUR RECAPTCHA SITE KEY--"></div>
 
-					<button class="btn custom-btn custom-btn2" type="submit"><i class="fa fa-paper-plane"></i> Send</button>
-					<button class="btn custom-btn custom-btn2" type="reset"><i class="fa fa-ban"></i> Reset</button>
+					<button class="btn custom-btn custom-btn2" type="submit"><i class="fa fa-paper-plane"></i><div id="send"></div></button>
+					<button class="btn custom-btn custom-btn2" type="reset"><i class="fa fa-ban"></i><div id="reset"></div></button>
 				</form>
 
 				<!--empty area for form error/success output-->

@@ -18,5 +18,7 @@
 		<div id="mail-jp">メール</div>
 		<div id="subject-jp">主題</div>
 		<div id="message-jp">メッセージ</div>
+		<div id="send-jp">送る</div>
+		<div id="reset-jp">リセット</div>
 	</body>
 </html>！

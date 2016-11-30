@@ -360,6 +360,6 @@ input[type=radio] {
 	background-color: transparent;
 	border: none;
 }
-#enter-de {
-	font-size: 1.8rem;
+.german {
+	font-size: 1.3rem;
 }

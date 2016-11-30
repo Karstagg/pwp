@@ -73,7 +73,10 @@ $(document).ready(function() {
 		$("#name").load("php/content-" + readCookie("lang") + ".php #name-" + readCookie("lang"));
 		$("#mail").load("php/content-" + readCookie("lang") + ".php #mail-" + readCookie("lang"));
 		$("#subject").load("php/content-" + readCookie("lang") + ".php #subject-" + readCookie("lang"));
-		$("#message").load("php/content-" + readCookie("lang") + ".php #mail-" + readCookie("lang"));
+		$("#message").load("php/content-" + readCookie("lang") + ".php #message-" + readCookie("lang"));
+		$("#send").load("php/content-" + readCookie("lang") + ".php #send-" + readCookie("lang"));
+		$("#reset").load("php/content-" + readCookie("lang") + ".php #reset-" + readCookie("lang"));
+
 	}
 	// calling the insert text function
 	insertText();

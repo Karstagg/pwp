@@ -77,6 +77,28 @@ $(document).ready(function() {
 		$("#send").load("php/content-" + readCookie("lang") + ".php #send-" + readCookie("lang"));
 		$("#reset").load("php/content-" + readCookie("lang") + ".php #reset-" + readCookie("lang"));
 
+		switch (readCookie("lang")) {
+			case "en":
+				$("#name_input").attr("placeholder", "Name");
+				$("#email_input").attr("placeholder", "Email");
+				$("#subject_input").attr("placeholder", "Subject");
+				$("#message_input").attr("placeholder", "Message (2000 character max)");
+				break;
+			case "jp":
+				$("#name_input").attr("placeholder", "氏名");
+				$("#email_input").attr("placeholder", "メール");
+				$("#subject_input").attr("placeholder", "主題");
+				$("#message_input").attr("placeholder", "メッサジ（２０００字以下）");
+				break;
+			case "de":
+				$("#name_input").attr("placeholder", "Name");
+				$("#email_input").attr("placeholder", "E-mail");
+				$("#subject_input").attr("placeholder", "Betreff");
+				$("#message_input").attr("placeholder", "Nachricht (Höchstens 2000 Buchstaben)");
+				break;
+		}
+
+
 	}
 	// calling the insert text function
 	insertText();

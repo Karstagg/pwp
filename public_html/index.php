@@ -86,43 +86,42 @@
 				<div id="intro" class="container-fluid pad-down bottom"></div>
 				<div class="bg__baz"></div>
 				<!--Begin Contact Form-->
-
 				<form id="contact-form" action="php/phpmailer.php" method="post" class="col-xs-8 col-xs-offset-2 text-center top bottom last">
 					<h2><div id="contact"></div></h2>
 					<div class="form-group">
-						<label for="name"><div id="name"></div><span class="text-danger">*</span></label>
+						<label for="name_input"><div id="name"></div><span class="text-danger">*</span></label>
 						<div class="input-group">
 							<div class="input-group-addon">
 								<i class="fa fa-user" aria-hidden="true"></i>
 							</div>
-							<input type="text" class="form-control" id="name" name="name" placeholder="Name">
+							<input type="text" class="form-control" id="name_input" name="name_input" placeholder="Name">
 						</div>
 					</div>
 					<div class="form-group">
-						<label for="email"><div id="mail"></div><span class="text-danger">*</span></label>
+						<label for="email_input"><div id="mail"></div><span class="text-danger">*</span></label>
 						<div class="input-group">
 							<div class="input-group-addon">
 								<i class="fa fa-envelope" aria-hidden="true"></i>
 							</div>
-							<input type="email" class="form-control" id="email" name="email" placeholder="Email">
+							<input type="email" class="form-control" id="email_input" name="email_input" placeholder="">
 						</div>
 					</div>
 					<div class="form-group">
-						<label for="subject"><div id="subject"></div></label>
+						<label for="subject_input"><div id="subject"></div></label>
 						<div class="input-group">
 							<div class="input-group-addon">
 								<i class="fa fa-pencil" aria-hidden="true"></i>
 							</div>
-							<input type="text" class="form-control" id="subject" name="subject" placeholder="Subject">
+							<input type="text" class="form-control" id="subject_input" name="subject_input" placeholder="Subject">
 						</div>
 					</div>
 					<div class="form-group">
-						<label for="message"><div id="message"></div><span class="text-danger">*</span></label>
+						<label for="message_input"><div id="message"></div><span class="text-danger">*</span></label>
 						<div class="input-group">
 							<div class="input-group-addon">
 								<i class="fa fa-comment" aria-hidden="true"></i>
 							</div>
-							<textarea class="form-control" rows="5" id="message" name="message" placeholder="Message (2000 characters max)"></textarea>
+							<textarea class="form-control" rows="5" id="message_input" name="message_input" placeholder="Message (2000 characters max)"></textarea>
 						</div>
 					</div>
 

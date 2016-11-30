@@ -16,7 +16,7 @@ $(document).ready(function() {
 		}
 		return null;
 	}
-	
+
 	//changes content based on language selection cookie
 	if (readCookie("lang") === null || readCookie("lang") == "undefined" ) {
 		document.cookie = "lang=en";
@@ -54,27 +54,8 @@ $(document).ready(function() {
 	else {
 		timeOfDay = "evening"
 	}
-
-	//checks a cookie to see what language is selected and loads that info when the page loads
-	switch(timeOfDay) {
-		case "morning":
-			$("#greeting").load("php/content-" + readCookie("lang") + ".php #morning-" + readCookie("lang"));
-			break;
-		case "afternoon":
-			$("#greeting").load("php/content-" + readCookie("lang") + ".php #afternoon-" + readCookie("lang"));
-			break;
-		case "evening":
-			$("#greeting").load("php/content-" + readCookie("lang") + ".php #evening-" + readCookie("lang"));
-			break;
-	}
-	$("#enter-btn").load("php/content-" + readCookie("lang") + ".php #enter-" + readCookie("lang"));
-	$("#intro").load("php/content-" + readCookie("lang") + ".php #intro-" + readCookie("lang"));
-
-	//checks the selected language when a radio button is clicked and loads the appropriate info
-	$("input[type=radio]").click(function () {
-
-		$(".lang_label").removeClass("label_select");
-		$("."+readCookie("lang")+"_label").addClass("label_select");
+	function insertText () {
+		//checks a cookie to see what language is selected and loads that info when the page loads
 		switch(timeOfDay) {
 			case "morning":
 				$("#greeting").load("php/content-" + readCookie("lang") + ".php #morning-" + readCookie("lang"));
@@ -88,6 +69,21 @@ $(document).ready(function() {
 		}
 		$("#enter-btn").load("php/content-" + readCookie("lang") + ".php #enter-" + readCookie("lang"));
 		$("#intro").load("php/content-" + readCookie("lang") + ".php #intro-" + readCookie("lang"));
+		$("#contact").load("php/content-" + readCookie("lang") + ".php #contact-" + readCookie("lang"));
+		$("#name").load("php/content-" + readCookie("lang") + ".php #name-" + readCookie("lang"));
+		$("#mail").load("php/content-" + readCookie("lang") + ".php #mail-" + readCookie("lang"));
+		$("#subject").load("php/content-" + readCookie("lang") + ".php #subject-" + readCookie("lang"));
+		$("#message").load("php/content-" + readCookie("lang") + ".php #mail-" + readCookie("lang"));
+	}
+	// calling the insert text function
+	insertText();
+
+	//checks the selected language when a radio button is clicked and loads the appropriate info
+	$("input[type=radio]").click(function () {
+
+		$(".lang_label").removeClass("label_select");
+		$("."+readCookie("lang")+"_label").addClass("label_select");
+		insertText();
 	});
 
 

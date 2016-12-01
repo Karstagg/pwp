@@ -65,6 +65,8 @@
 						</li>
 						<li><a href="#intro" class="scroll">Intro</a></li>
 						<li><a href="#">link2</a></li>
+						<li><a href="#">link2</a></li>
+						<li><a href="#">link2</a></li>
 					</ul>
 				</div><!-- /.navbar-collapse -->
 			</div><!-- /.container-fluid -->
@@ -86,6 +88,37 @@
 				<div id="greeting" class="container-fluid pad-down"></div>
 				<div id="intro" class="container-fluid pad-down bottom"></div>
 				<div class="bg__baz"></div>
+				<!--thumbnail gallery of other work-->
+				<div class="row">
+					<div class="col-sm-6 col-md-4">
+						<div class="thumbnail">
+							<img class="website-thumbnail" src="./img/lingorator.png" alt="Lingorator">
+							<div class="caption">
+								<h3>Lingorator</h3>
+								<p>An application to help linguists generate new languages (currently not on the web)</p>
+								<p><a href="#" class="btn btn-primary" role="button" disabled>Button</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-6 col-md-4">
+						<div class="thumbnail">
+							<img class="website-thumbnail" src="./img/kiteCrypt.png" alt="kiteCrypt">
+							<br>
+							<br>
+							<br>
+							<div class="caption">
+								<h3>kiteCrypt</h3>
+								<p>A zero knowledge encrypted chat application (currently not on the web)</p>
+								<p><a href="#" class="btn btn-primary" role="button" disabled>Button</a>
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+
+				<div class="bg__bar"></div>
+
 				<!--Begin Contact Form-->
 				<form id="contact-form" action="php/phpmailer.php" method="post" class="col-xs-8 col-xs-offset-2 text-center top bottom last">
 					<h2><div id="contact"></div></h2>
@@ -129,9 +162,9 @@
 					<!-- reCAPTCHA -->
 
 
-						<div class="g-recaptcha recap-style" data-theme="dark" data-sitekey="6Leyiw0UAAAAACK9mXrHUkLCGALZBgZQFigbXl2U"></div>
-						<button class="btn custom-btn custom-btn2" type="submit"><i class="fa fa-paper-plane"></i><div id="send"></div></button>
-						<button class="btn custom-btn custom-btn2" type="reset"><i class="fa fa-ban"></i><div id="reset"></div></button>
+					<div class="g-recaptcha recap-style" data-theme="dark" data-sitekey="6Leyiw0UAAAAACK9mXrHUkLCGALZBgZQFigbXl2U"></div>
+					<button class="btn custom-btn custom-btn2" type="submit"><i class="fa fa-paper-plane"></i><div id="send"></div></button>
+					<button class="btn custom-btn custom-btn2" type="reset"><i class="fa fa-ban"></i><div id="reset"></div></button>
 
 
 				</form>
@@ -142,6 +175,7 @@
 						<div id="output-area"></div>
 					</div>
 				</div>
+
 				<div class="bg__bazz"></div>
 
 			</div>
@@ -180,6 +214,9 @@
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
 					<ul class="nav navbar-nav navbar-right">
 						<li><a href="#intro" class="scroll">Intro</a></li>
+						<li><a href="#">link2</a></li>
+						<li><a href="#">link2</a></li>
+						<li><a href="#">link2</a></li>
 						<li><a href="#">link2</a></li>
 					</ul>
 				</div><!-- /.navbar-collapse -->

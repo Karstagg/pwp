@@ -367,3 +367,8 @@ input[type=radio] {
 .no {
 	width: 90%;
 }
+.recap-style {
+	margin-right: 50%;
+	transform:scale(0.60);
+	transform-origin:0 0;
+}

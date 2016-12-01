@@ -13,7 +13,7 @@
 
 // your Google reCAPTCHA keys here
 $siteKey = 'lol';
-$secret = 'no';
+$secret = 'nonono';
 
 /**
  * attach the recipients to the message

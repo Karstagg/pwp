@@ -30,6 +30,7 @@
 		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.form/3.51/jquery.form.min.js"></script>
 		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.15.0/jquery.validate.min.js"></script>
 		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.15.0/additional-methods.min.js"></script>
+		<script src='https://www.google.com/recaptcha/api.js'></script>
 		<!--custom js-->
 		<script src="js/lib.js"></script>
 		<title>Matthew R. Fisher</title>
@@ -94,7 +95,7 @@
 							<div class="input-group-addon">
 								<i class="fa fa-user" aria-hidden="true"></i>
 							</div>
-							<input type="text" class="form-control" id="name_input" name="name_input" placeholder="Name">
+							<input type="text" class="form-control" id="name_input" name="name_input" placeholder="">
 						</div>
 					</div>
 					<div class="form-group">
@@ -112,7 +113,7 @@
 							<div class="input-group-addon">
 								<i class="fa fa-pencil" aria-hidden="true"></i>
 							</div>
-							<input type="text" class="form-control" id="subject_input" name="subject_input" placeholder="Subject">
+							<input type="text" class="form-control" id="subject_input" name="subject_input" placeholder="">
 						</div>
 					</div>
 					<div class="form-group">
@@ -121,7 +122,7 @@
 							<div class="input-group-addon">
 								<i class="fa fa-comment" aria-hidden="true"></i>
 							</div>
-							<textarea class="form-control" rows="5" id="message_input" name="message_input" placeholder="Message (2000 characters max)"></textarea>
+							<textarea class="form-control" rows="5" id="message_input" name="message_input" placeholder=""></textarea>
 						</div>
 					</div>
 
@@ -130,10 +131,11 @@
 
 					<button class="btn custom-btn custom-btn2" type="submit"><i class="fa fa-paper-plane"></i><div id="send"></div></button>
 					<button class="btn custom-btn custom-btn2" type="reset"><i class="fa fa-ban"></i><div id="reset"></div></button>
+					<div class="g-recaptcha" data-sitekey="6Leyiw0UAAAAACK9mXrHUkLCGALZBgZQFigbXl2U"></div>
 				</form>
 
 				<!--empty area for form error/success output-->
-				<div class="row">
+				<div class="row no">
 					<div class="col-xs-8 col-xs-offset-2">
 						<div id="output-area"></div>
 					</div>

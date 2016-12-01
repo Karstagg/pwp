@@ -70,10 +70,10 @@ $(document).ready(function() {
 		$("#enter-btn").load("php/content-" + readCookie("lang") + ".php #enter-" + readCookie("lang"));
 		$("#intro").load("php/content-" + readCookie("lang") + ".php #intro-" + readCookie("lang"));
 		$("#contact").load("php/content-" + readCookie("lang") + ".php #contact-" + readCookie("lang"));
-		$("#name").load("php/content-" + readCookie("lang") + ".php #name-" + readCookie("lang"));
-		$("#mail").load("php/content-" + readCookie("lang") + ".php #mail-" + readCookie("lang"));
-		$("#subject").load("php/content-" + readCookie("lang") + ".php #subject-" + readCookie("lang"));
-		$("#message").load("php/content-" + readCookie("lang") + ".php #message-" + readCookie("lang"));
+		$("#name-inject").load("php/content-" + readCookie("lang") + ".php #name-" + readCookie("lang"));
+		$("#mail-inject").load("php/content-" + readCookie("lang") + ".php #mail-" + readCookie("lang"));
+		$("#subject-inject").load("php/content-" + readCookie("lang") + ".php #subject-" + readCookie("lang"));
+		$("#message-inject").load("php/content-" + readCookie("lang") + ".php #message-" + readCookie("lang"));
 		$("#send").load("php/content-" + readCookie("lang") + ".php #send-" + readCookie("lang"));
 		$("#reset").load("php/content-" + readCookie("lang") + ".php #reset-" + readCookie("lang"));
 

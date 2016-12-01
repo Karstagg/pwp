@@ -100,7 +100,7 @@ $(document).ready(function() {
 
 
 	}
-	// calling the insert text function
+	// calling the insert text function//3fdsafaf
 	insertText();
 
 	//checks the selected language when a radio button is clicked and loads the appropriate info

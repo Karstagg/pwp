@@ -375,3 +375,6 @@ input[type=radio] {
 .thumbnail {
 	height: 450px;
 }
+.thumbnail-row {
+	width: 100%;
+}

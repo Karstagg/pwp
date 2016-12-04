@@ -6,6 +6,12 @@
 		<script src="js/lib.js"></script>
 	</head>
 	<body>
+		<!--links-->
+		<div id="intro-link-de">Intro</div>
+		<div id="other-work-link-de">Andere Arbeit</div>
+		<div id="current-work-link-de">Aktuelle Arbeit</div>
+		<div id="contact-link-de">Kontaktieren</div>
+		<div id="resume-link-de">Resume</div>
 		<!--greeting and info-->
 		<div id="enter-de" class="german">Zugang</div>
 		<div id="morning-de"><h3>Guten Morgen!</h3></div>

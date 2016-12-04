@@ -3,7 +3,7 @@
 
 
 $(document).ready(function() {
-
+	var currentLanguage;
 	//adapted from http://www.quirksmode.org/js/cookies.html
 	//reads cookie readCookie("lang")
 	function readCookie(name) {
@@ -67,8 +67,17 @@ $(document).ready(function() {
 				$("#greeting").load("php/content-" + readCookie("lang") + ".php #evening-" + readCookie("lang"));
 				break;
 		}
+
+		//links
+		$(".intro-link").load("php/content-" + readCookie("lang") + ".php #intro-link-" + readCookie("lang"));
+		$(".other-work-link").load("php/content-" + readCookie("lang") + ".php #other-work-link-" + readCookie("lang"));
+		$(".current-projects-link").load("php/content-" + readCookie("lang") + ".php #current-work-link-" + readCookie("lang"));
+		$(".contact-link").load("php/content-" + readCookie("lang") + ".php #contact-link-" + readCookie("lang"));
+		$(".resume-link").load("php/content-" + readCookie("lang") + ".php #resume-link-" + readCookie("lang"));
 		$("#enter-btn").load("php/content-" + readCookie("lang") + ".php #enter-" + readCookie("lang"));
+		//intro
 		$("#intro").load("php/content-" + readCookie("lang") + ".php #intro-" + readCookie("lang"));
+		//contact form
 		$("#contact").load("php/content-" + readCookie("lang") + ".php #contact-" + readCookie("lang"));
 		$("#name-inject").load("php/content-" + readCookie("lang") + ".php #name-" + readCookie("lang"));
 		$("#mail-inject").load("php/content-" + readCookie("lang") + ".php #mail-" + readCookie("lang"));
@@ -78,26 +87,26 @@ $(document).ready(function() {
 		$("#reset").load("php/content-" + readCookie("lang") + ".php #reset-" + readCookie("lang"));
 
 		/*switch (readCookie("lang")) { //this was causing a massive slowdown on the website, may leave it out
-			case "en":
-				$("#name_input").attr("placeholder", "Name");
-				$("#email_input").attr("placeholder", "Email");
-				$("#subject_input").attr("placeholder", "Subject");
-				$("#message_input").attr("placeholder", "Message (2000 character max)");
-				break;
-			case "jp":
-				$("#name_input").attr("placeholder", "氏名");
-				$("#email_input").attr("placeholder", "メール");
-				$("#subject_input").attr("placeholder", "主題");
-				$("#message_input").attr("placeholder", "メッセージ（２０００字以下）");
-				break;
-			case "de":
-				$("#name_input").attr("placeholder", "Name");
-				$("#email_input").attr("placeholder", "E-mail");
-				$("#subject_input").attr("placeholder", "Betreff");
-				$("#message_input").attr("placeholder", "Nachricht (Höchstens 2000 Buchstaben)");
-				break;
-		}*/
-
+		 case "en":
+		 $("#name_input").attr("placeholder", "Name");
+		 $("#email_input").attr("placeholder", "Email");
+		 $("#subject_input").attr("placeholder", "Subject");
+		 $("#message_input").attr("placeholder", "Message (2000 character max)");
+		 break;
+		 case "jp":
+		 $("#name_input").attr("placeholder", "氏名");
+		 $("#email_input").attr("placeholder", "メール");
+		 $("#subject_input").attr("placeholder", "主題");
+		 $("#message_input").attr("placeholder", "メッセージ（２０００字以下）");
+		 break;
+		 case "de":
+		 $("#name_input").attr("placeholder", "Name");
+		 $("#email_input").attr("placeholder", "E-mail");
+		 $("#subject_input").attr("placeholder", "Betreff");
+		 $("#message_input").attr("placeholder", "Nachricht (Höchstens 2000 Buchstaben)");
+		 break;
+		 }*/
+		currentLanguage = readCookie("lang");
 
 	}
 	// calling the insert text function//3fdsafaf
@@ -109,6 +118,7 @@ $(document).ready(function() {
 		$(".lang_label").removeClass("label_select");
 		$("."+readCookie("lang")+"_label").addClass("label_select");
 		insertText();
+
 	});
 
 
@@ -148,7 +158,60 @@ $(document).ready(function() {
  validation for form
 ********************************************************************************/
 	/* begin validation*/
+
+
+	function injectError (type) {
+		var errorMessage;
+		if (type === "name") {
+			if(currentLanguage === "en") {
+				errorMessage = "Please enter your name";
+			}
+			else if(currentLanguage === "de") {
+				errorMessage = "German name error";
+			}
+			else {
+				errorMessage = "氏名を入力してください";
+			}
+		}
+		if (type === "email") {
+			if (currentLanguage === "en") {
+				errorMessage = "Please enter a valid email address.";
+			}
+			else if (currentLanguage === "de") {
+				errorMessage = "German email error";
+			}
+			else {
+				errorMessage = "有効なメールアドレスを入力してください";
+			}
+		}
+		if (type === "message") {
+			if (currentLanguage === "en") {
+				errorMessage = "Please enter a message.";
+			}
+			else if (currentLanguage === "de") {
+				errorMessage = "german message error";
+			}
+			else {
+				errorMessage = "メッセージを入力してください";
+			}
+		}
+		if (type === "messageLength") {
+			if (currentLanguage === "en") {
+				errorMessage = "Message too long.";
+			}
+			else if (currentLanguage === "de") {
+				errorMessage = "german message length error";
+			}
+			else {
+				errorMessage = "メッセージは長い過ぎる";
+			}
+		}
+		return errorMessage;
+	}
+
+
 	$("#contact-form").validate({
+
 
 		// setup handling of form errors
 		debug: true,
@@ -175,15 +238,15 @@ $(document).ready(function() {
 		// error messages to display to the end user
 		messages: {
 			name: {
-				required: "Please enter your name."
+				required: injectError("name")
 			},
 			email: {
-				email: "Please enter a valid email address.",
-				required: "Please enter a valid email address."
+				email: injectError("email"),
+				required: injectError("email")
 			},
 			message: {
-				required: "Please enter a message.",
-				maxlength: "2000 characters max."
+				required: injectError("message"),
+				maxlength: injectError("messageLength")
 			}
 		},
 

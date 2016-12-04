@@ -6,6 +6,12 @@
 		<script src="js/lib.js"></script>
 	</head>
 	<body>
+		<!--links-->
+		<div id="intro-link-en">Intro</div>
+		<div id="other-work-link-en">Other Work</div>
+		<div id="current-work-link-en">Current Projects</div>
+		<div id="contact-link-en">Contact</div>
+		<div id="resume-link-en">Resume</div>
 		<!--greeting and info-->
 		<div id="enter-en">Enter</div>
 		<div id="morning-en"><h3>Good morning!</h3></div>

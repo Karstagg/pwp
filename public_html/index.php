@@ -63,10 +63,11 @@
 									<input name="lang2" id="de2" type="radio" value="de"></li>
 							</ul>
 						</li>
-						<li><a href="#intro" class="scroll">Intro</a></li>
-						<li><a href="#">link2</a></li>
-						<li><a href="#">link2</a></li>
-						<li><a href="#">link2</a></li>
+						<li><a href="#intro" class="scroll"><div class="intro-link"></div></a></li>
+						<li><a href="#"><div class="other-work-link"></div></a></li>
+						<li><a href="#"><div class="current-projects-link"></div></a></li>
+						<li><a href="#"><div class="contact-link"></div></a></li>
+						<li><a href="#"><div class="resume-link"></div></a></li>
 					</ul>
 				</div><!-- /.navbar-collapse -->
 			</div><!-- /.container-fluid -->
@@ -89,7 +90,7 @@
 				<div id="intro" class="container-fluid pad-down bottom"></div>
 				<div class="bg__baz"></div>
 				<!--thumbnail gallery of other work-->
-				<div class="row">
+				<div class="row thumbnail-row">
 					<div class="col-sm-6 col-md-4">
 						<div class="thumbnail">
 							<img class="website-thumbnail" src="./img/lingorator.png" alt="Lingorator">
@@ -163,7 +164,7 @@
 
 
 					<div class="g-recaptcha recap-style" data-theme="dark" data-sitekey="6Leyiw0UAAAAACK9mXrHUkLCGALZBgZQFigbXl2U"></div>
-					<button class="btn custom-btn custom-btn2" type="submit"><i class="fa fa-paper-plane"></i><div id="send"></div></button>
+					<button id="submitter" class="btn custom-btn custom-btn2" type="submit"><i class="fa fa-paper-plane"></i><div id="send"></div></button>
 					<button class="btn custom-btn custom-btn2" type="reset"><i class="fa fa-ban"></i><div id="reset"></div></button>
 
 
@@ -213,11 +214,11 @@
 				<!-- Collect the nav links, forms, and other content for toggling -->
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
 					<ul class="nav navbar-nav navbar-right">
-						<li><a href="#intro" class="scroll">Intro</a></li>
-						<li><a href="#">link2</a></li>
-						<li><a href="#">link2</a></li>
-						<li><a href="#">link2</a></li>
-						<li><a href="#">link2</a></li>
+						<li><a href="#intro" class="scroll"><div class="intro-link"></div></a></li>
+						<li><a href="#"><div class="other-work-link"></div></a></li>
+						<li><a href="#"><div class="current-projects-link"></div></a></li>
+						<li><a href="#"><div class="contact-link"></div></a></li>
+						<li><a href="#"><div class="resume-link"></div></a></li>
 					</ul>
 				</div><!-- /.navbar-collapse -->
 			</div><!-- /.container-fluid -->

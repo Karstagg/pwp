@@ -6,6 +6,12 @@
 		<script src="js/lib.js"></script>
 	</head>
 	<body>
+		<!--links-->
+		<div id="intro-link-jp">自己紹介</div>
+		<div id="other-work-link-jp">他の作</div>
+		<div id="current-work-link-jp">現行のプロジェクト</div>
+		<div id="contact-link-jp">連絡</div>
+		<div id="resume-link-jp">ＣＶ</div>
 		<!--greeting and info-->
 		<div id="enter-jp">入る</div>
 		<div id="morning-jp"><h3>おはようございます！</h3></div>

@@ -9,7 +9,6 @@
 		<!--links-->
 		<div id="intro-link-en">Intro</div>
 		<div id="other-work-link-en">Other Work</div>
-		<div id="current-work-link-en">Current Projects</div>
 		<div id="contact-link-en">Contact</div>
 		<div id="resume-link-en">Resume</div>
 		<!--greeting and info-->
@@ -21,7 +20,7 @@
 		<!--other work-->
 		<div id="dead-work-link-en">Under Construction</div>
 		<div id="live-work-link-en">Check it out!</div>
-		<div id="kiteCrypt-en">>A zero knowledge encrypted chat application.</div>
+		<div id="kiteCrypt-en">A zero knowledge encrypted chat application.</div>
 		<div id="lingorator-en">An application to help linguists generate new languages.</div>
 		<!--contact form-->
 		<div id="contact-en">Contact</div>

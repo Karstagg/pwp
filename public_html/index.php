@@ -64,10 +64,10 @@
 							</ul>
 						</li>
 						<li><a href="#intro" class="scroll"><div class="intro-link"></div></a></li>
-						<li><a href="#"><div class="other-work-link"></div></a></li>
-						<li><a href="#"><div class="current-projects-link"></div></a></li>
-						<li><a href="#"><div class="contact-link"></div></a></li>
-						<li><a href="#"><div class="resume-link"></div></a></li>
+						<li><a href="#other-work" class="scroll"><div class="other-work-link"></div></a></li>
+						<li><a href="#contact" class="scroll"><div class="contact-link"></div></a></li>
+						<li><a href="https://github.com/karstagg" target="_blank" >Github</a></li>
+						<li><a href="./img/matthew_fisher_resume.pdf" target="_blank"><div class="resume-link"></div></a></li>
 					</ul>
 				</div><!-- /.navbar-collapse -->
 			</div><!-- /.container-fluid -->
@@ -90,14 +90,14 @@
 				<div id="intro" class="container-fluid pad-down bottom separated"></div>
 				<div class="bg__baz"></div>
 				<!--thumbnail gallery of other work-->
-				<div class="row thumbnail-row separated pad-down">
+				<div id="other-work" class="row thumbnail-row separated pad-down">
 					<div class="col-sm-6 col-md-4">
 						<div class="thumbnail">
 							<img class="website-thumbnail" src="./img/lingorator.png" alt="Lingorator">
 							<div class="caption">
 								<h3>Lingorator</h3>
 								<p id="lingorator-text"></p>
-								<a href="" class="btn custom-btn3" role="button" disabled><div class="deadLink"></div></a>
+								<a href="" class="btn custom-btn custom-btn3" role="button" disabled><div class="deadLink"></div></a>
 							</div>
 						</div>
 					</div>
@@ -107,7 +107,7 @@
 							<div class="caption">
 								<h3>kiteCrypt</h3>
 								<p id="kiteCrypt-text"></p>
-								<a href="" class="btn custom-btn3" role="button" disabled><div class="deadLink"></div></a>
+								<a href="" class="btn custom-btn custom-btn3" role="button" disabled><div class="deadLink"></div></a>
 							</div>
 						</div>
 					</div>
@@ -174,7 +174,7 @@
 					</div>
 				</div>
 
-				<div class="bg__bazz"></div>
+				<div class="bg__baz"></div>
 
 			</div>
 		</article>
@@ -212,10 +212,10 @@
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
 					<ul class="nav navbar-nav navbar-right">
 						<li><a href="#intro" class="scroll"><div class="intro-link"></div></a></li>
-						<li><a href="#"><div class="other-work-link"></div></a></li>
-						<li><a href="#"><div class="current-projects-link"></div></a></li>
-						<li><a href="#"><div class="contact-link"></div></a></li>
-						<li><a href="#"><div class="resume-link"></div></a></li>
+						<li><a href="#other-work" class="scroll"><div class="other-work-link"></div></a></li>
+						<li><a href="#contact" class="scroll"><div class="contact-link"></div></a></li>
+						<li><a href="https://github.com/karstagg" target="_blank" >Github</a></li>
+						<li><a href="./img/matthew_fisher_resume.pdf" target="_blank"><div class="resume-link"></div></a></li>
 					</ul>
 				</div><!-- /.navbar-collapse -->
 			</div><!-- /.container-fluid -->

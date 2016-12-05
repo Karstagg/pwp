@@ -9,7 +9,6 @@
 		<!--links-->
 		<div id="intro-link-de">Intro</div>
 		<div id="other-work-link-de">Andere Arbeit</div>
-		<div id="current-work-link-de">Aktuelle Arbeit</div>
 		<div id="contact-link-de">Kontaktieren</div>
 		<div id="resume-link-de">Resume</div>
 		<!--greeting and info-->
@@ -22,7 +21,7 @@
 		<div id="dead-work-link-de">german here</div>
 		<div id="live-work-link-de">german here</div>
 		<div id="kiteCrypt-de">german here</div>
-		<div id="lingorator-en">german here</div>
+		<div id="lingorator-de">german here</div>
 		<!--contact form-->
 		<div id="contact-de">Kontaktieren</div>
 		<div id="name-de">Name</div>

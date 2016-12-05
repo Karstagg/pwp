@@ -53,12 +53,11 @@ buttons
 .custom-btn2{ /*site navigation buttons*/
 	width:120px;
 }
+
 .custom-btn3{ /*site navigation buttons*/
-	width:100px;
-	background-color: dimgray;
-	color: #C1002F !important;
+
+	width: 66%;
 	position: absolute;
-	left:    15%;
 	bottom:   6%;
 }
 .custom-btn:hover{ /*site navigation buttons*/

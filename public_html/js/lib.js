@@ -76,7 +76,6 @@ $(document).ready(function() {
 		//links
 		$(".intro-link").load("php/content-" + readCookie("lang") + ".php #intro-link-" + readCookie("lang"));
 		$(".other-work-link").load("php/content-" + readCookie("lang") + ".php #other-work-link-" + readCookie("lang"));
-		$(".current-projects-link").load("php/content-" + readCookie("lang") + ".php #current-work-link-" + readCookie("lang"));
 		$(".contact-link").load("php/content-" + readCookie("lang") + ".php #contact-link-" + readCookie("lang"));
 		$(".resume-link").load("php/content-" + readCookie("lang") + ".php #resume-link-" + readCookie("lang"));
 		$("#enter-btn").load("php/content-" + readCookie("lang") + ".php #enter-" + readCookie("lang"));
@@ -125,7 +124,7 @@ $(document).ready(function() {
 					target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
 					if(target.length) {
 						$('html,body').animate({
-							scrollTop: (target.offset().top - height * 0.55) // adjust this according to your content
+							scrollTop: (target.offset().top - height * 0.25) // adjust this according to your content
 
 						}, 1000);
 						return false;

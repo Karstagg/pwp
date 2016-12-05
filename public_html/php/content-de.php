@@ -18,6 +18,11 @@
 		<div id="afternoon-de"><h1>Guten Tag!</h1></div>
 		<div id="evening-de"><h1>Guten Abend!</h1></div>
 		<div id="intro-de"><p>Ich heiße Matthew Fisher und das ist mein persönlicher website und portfolio. hier können Sie auf meine andere Arbeit blicken, über mein aktuelle Arbeit lesen, oder Mich kontaktieren.</p></div>
+		<!--other work-->
+		<div id="dead-work-link-de">german here</div>
+		<div id="live-work-link-de">german here</div>
+		<div id="kiteCrypt-de">german here</div>
+		<div id="lingorator-en">german here</div>
 		<!--contact form-->
 		<div id="contact-de">Kontaktieren</div>
 		<div id="name-de">Name</div>

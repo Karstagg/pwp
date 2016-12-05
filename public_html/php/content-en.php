@@ -18,6 +18,11 @@
 		<div id="afternoon-en"><h1>Good afternoon!</h1></div>
 		<div id="evening-en"><h1>Good evening!</h1></div>
 		<div id="intro-en"><p>My name is Matthew Fisher and I am a web developer. You have found my personal page and portfolio. Please feel free to take a look at my other work, current projects, or contact me.</p></div>
+		<!--other work-->
+		<div id="dead-work-link-en">Under Construction</div>
+		<div id="live-work-link-en">Check it out!</div>
+		<div id="kiteCrypt-en">>A zero knowledge encrypted chat application.</div>
+		<div id="lingorator-en">An application to help linguists generate new languages.</div>
 		<!--contact form-->
 		<div id="contact-en">Contact</div>
 		<div id="name-en">Name</div>

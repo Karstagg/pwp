@@ -87,30 +87,27 @@
 				<div class="bg__bar"></div>
 				<a name="intro"></a>
 				<div id="greeting" class="container-fluid pad-down"></div>
-				<div id="intro" class="container-fluid pad-down bottom"></div>
+				<div id="intro" class="container-fluid pad-down bottom separated"></div>
 				<div class="bg__baz"></div>
 				<!--thumbnail gallery of other work-->
-				<div class="row thumbnail-row">
+				<div class="row thumbnail-row separated pad-down">
 					<div class="col-sm-6 col-md-4">
 						<div class="thumbnail">
 							<img class="website-thumbnail" src="./img/lingorator.png" alt="Lingorator">
 							<div class="caption">
 								<h3>Lingorator</h3>
-								<p>An application to help linguists generate new languages (currently not on the web)</p>
-								<p><a href="#" class="btn btn-primary" role="button" disabled>Button</a>
+								<p id="lingorator-text"></p>
+								<a href="" class="btn custom-btn3" role="button" disabled><div class="deadLink"></div></a>
 							</div>
 						</div>
 					</div>
 					<div class="col-sm-6 col-md-4">
 						<div class="thumbnail">
 							<img class="website-thumbnail" src="./img/kiteCrypt.png" alt="kiteCrypt">
-							<br>
-							<br>
-							<br>
 							<div class="caption">
 								<h3>kiteCrypt</h3>
-								<p>A zero knowledge encrypted chat application (currently not on the web)</p>
-								<p><a href="#" class="btn btn-primary" role="button" disabled>Button</a>
+								<p id="kiteCrypt-text"></p>
+								<a href="" class="btn custom-btn3" role="button" disabled><div class="deadLink"></div></a>
 							</div>
 						</div>
 					</div>

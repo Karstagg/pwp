@@ -18,6 +18,11 @@
 		<div id="afternoon-jp"><h1>こんにちは！</h1></div>
 		<div id="evening-jp"><h1>こんばんは！</h1></div>
 		<div id="intro-jp"><p>フィシャー・マットと申します。ウェブデブぇローパーです。自分のページとポートフォリオです。他の作を見るし、現行のプロジェクトについて読むし、連絡下さい。</p></div>
+		<!--other work-->
+		<div id="dead-work-link-jp">工事中</div>
+		<div id="live-work-link-jp">見てください</div>
+		<div id="kiteCrypt-jp">知識ゼロでチャットを暗号化するアプリです。</div>
+		<div id="lingorator-jp">言語学者には言語を作り助かりアプリです。</div>
 		<!--contact form-->
 		<div id="contact-jp">連絡してください</div>
 		<div id="name-jp">氏名</div>

@@ -32,7 +32,9 @@ body {
 		width: 100vw;
 	}
 }
-
+/*******************************************
+buttons
+*******************************************/
 .custom-btn{ /*site navigation buttons*/
 	display: inline-block;
 	font-size: 2rem;
@@ -50,6 +52,14 @@ body {
 }
 .custom-btn2{ /*site navigation buttons*/
 	width:120px;
+}
+.custom-btn3{ /*site navigation buttons*/
+	width:100px;
+	background-color: dimgray;
+	color: #C1002F !important;
+	position: absolute;
+	left:    15%;
+	bottom:   6%;
 }
 .custom-btn:hover{ /*site navigation buttons*/
 	color: #C1002F !important;
@@ -315,6 +325,10 @@ background for mobile devices
 	.last {
 		padding-bottom: 30%;
 	}
+	.separated {
+		padding-bottom: 20px;
+		border-bottom: 2px solid #1A1818;
+	}
 
 	.label_select {
 		color: #880054;
@@ -372,9 +386,23 @@ input[type=radio] {
 	transform:scale(0.60);
 	transform-origin:0 0;
 }
+/*****************************************
+thumbnails
+*****************************************/
 .thumbnail {
-	height: 450px;
+	height: 250px;
+	height: 400px;
+	margin-left: 30px;
 }
+@media (min-width: 500px) {
+	.thumbnail {
+		height: 250px;
+		height: 530px;
+		margin-left: 30px;
+	}
+}
+
 .thumbnail-row {
 	width: 100%;
+
 }

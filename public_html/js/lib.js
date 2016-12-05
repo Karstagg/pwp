@@ -3,6 +3,9 @@
 
 
 $(document).ready(function() {
+
+
+
 	var currentLanguage;
 	//adapted from http://www.quirksmode.org/js/cookies.html
 	//reads cookie readCookie("lang")
@@ -55,6 +58,8 @@ $(document).ready(function() {
 		timeOfDay = "evening"
 	}
 	function insertText () {
+		currentLanguage = readCookie("lang");
+
 		//checks a cookie to see what language is selected and loads that info when the page loads
 		switch(timeOfDay) {
 			case "morning":
@@ -77,6 +82,11 @@ $(document).ready(function() {
 		$("#enter-btn").load("php/content-" + readCookie("lang") + ".php #enter-" + readCookie("lang"));
 		//intro
 		$("#intro").load("php/content-" + readCookie("lang") + ".php #intro-" + readCookie("lang"));
+		//other work
+		$(".deadLink").load("php/content-" + readCookie("lang") + ".php #dead-work-link-" + readCookie("lang"));
+		$(".liveLink").load("php/content-" + readCookie("lang") + ".php #live-work-link-" + readCookie("lang"));
+		$("#lingorator-text").load("php/content-" + readCookie("lang") + ".php #lingorator-" + readCookie("lang"));
+		$("#kiteCrypt-text").load("php/content-" + readCookie("lang") + ".php #kiteCrypt-" + readCookie("lang"));
 		//contact form
 		$("#contact").load("php/content-" + readCookie("lang") + ".php #contact-" + readCookie("lang"));
 		$("#name-inject").load("php/content-" + readCookie("lang") + ".php #name-" + readCookie("lang"));
@@ -86,27 +96,7 @@ $(document).ready(function() {
 		$("#send").load("php/content-" + readCookie("lang") + ".php #send-" + readCookie("lang"));
 		$("#reset").load("php/content-" + readCookie("lang") + ".php #reset-" + readCookie("lang"));
 
-		/*switch (readCookie("lang")) { //this was causing a massive slowdown on the website, may leave it out
-		 case "en":
-		 $("#name_input").attr("placeholder", "Name");
-		 $("#email_input").attr("placeholder", "Email");
-		 $("#subject_input").attr("placeholder", "Subject");
-		 $("#message_input").attr("placeholder", "Message (2000 character max)");
-		 break;
-		 case "jp":
-		 $("#name_input").attr("placeholder", "氏名");
-		 $("#email_input").attr("placeholder", "メール");
-		 $("#subject_input").attr("placeholder", "主題");
-		 $("#message_input").attr("placeholder", "メッセージ（２０００字以下）");
-		 break;
-		 case "de":
-		 $("#name_input").attr("placeholder", "Name");
-		 $("#email_input").attr("placeholder", "E-mail");
-		 $("#subject_input").attr("placeholder", "Betreff");
-		 $("#message_input").attr("placeholder", "Nachricht (Höchstens 2000 Buchstaben)");
-		 break;
-		 }*/
-		currentLanguage = readCookie("lang");
+
 
 	}
 	// calling the insert text function//3fdsafaf

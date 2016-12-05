@@ -63,37 +63,37 @@ $(document).ready(function() {
 		//checks a cookie to see what language is selected and loads that info when the page loads
 		switch(timeOfDay) {
 			case "morning":
-				$("#greeting").load("php/content-" + readCookie("lang") + ".php #morning-" + readCookie("lang"));
+				$("#greeting").load("php/content-" + currentLanguage + ".php #morning-" + currentLanguage);
 				break;
 			case "afternoon":
-				$("#greeting").load("php/content-" + readCookie("lang") + ".php #afternoon-" + readCookie("lang"));
+				$("#greeting").load("php/content-" + currentLanguage + ".php #afternoon-" + currentLanguage);
 				break;
 			case "evening":
-				$("#greeting").load("php/content-" + readCookie("lang") + ".php #evening-" + readCookie("lang"));
+				$("#greeting").load("php/content-" + currentLanguage + ".php #evening-" + currentLanguage);
 				break;
 		}
 
 		//links
-		$(".intro-link").load("php/content-" + readCookie("lang") + ".php #intro-link-" + readCookie("lang"));
-		$(".other-work-link").load("php/content-" + readCookie("lang") + ".php #other-work-link-" + readCookie("lang"));
-		$(".contact-link").load("php/content-" + readCookie("lang") + ".php #contact-link-" + readCookie("lang"));
-		$(".resume-link").load("php/content-" + readCookie("lang") + ".php #resume-link-" + readCookie("lang"));
-		$("#enter-btn").load("php/content-" + readCookie("lang") + ".php #enter-" + readCookie("lang"));
+		$(".intro-link").load("php/content-" + currentLanguage + ".php #intro-link-" + currentLanguage);
+		$(".other-work-link").load("php/content-" + currentLanguage + ".php #other-work-link-" + currentLanguage);
+		$(".contact-link").load("php/content-" + currentLanguage + ".php #contact-link-" + currentLanguage);
+		$(".resume-link").load("php/content-" + currentLanguage + ".php #resume-link-" + currentLanguage);
+		$("#enter-btn").load("php/content-" + currentLanguage + ".php #enter-" + currentLanguage);
 		//intro
-		$("#intro").load("php/content-" + readCookie("lang") + ".php #intro-" + readCookie("lang"));
+		$("#intro").load("php/content-" + currentLanguage + ".php #intro-" + currentLanguage);
 		//other work
-		$(".deadLink").load("php/content-" + readCookie("lang") + ".php #dead-work-link-" + readCookie("lang"));
-		$(".liveLink").load("php/content-" + readCookie("lang") + ".php #live-work-link-" + readCookie("lang"));
-		$("#lingorator-text").load("php/content-" + readCookie("lang") + ".php #lingorator-" + readCookie("lang"));
-		$("#kiteCrypt-text").load("php/content-" + readCookie("lang") + ".php #kiteCrypt-" + readCookie("lang"));
+		$(".deadLink").load("php/content-" + currentLanguage + ".php #dead-work-link-" + currentLanguage);
+		$(".liveLink").load("php/content-" + currentLanguage + ".php #live-work-link-" + currentLanguage);
+		$("#lingorator-text").load("php/content-" + currentLanguage + ".php #lingorator-" + currentLanguage);
+		$("#kiteCrypt-text").load("php/content-" + currentLanguage + ".php #kiteCrypt-" + currentLanguage);
 		//contact form
-		$("#contact").load("php/content-" + readCookie("lang") + ".php #contact-" + readCookie("lang"));
-		$("#name-inject").load("php/content-" + readCookie("lang") + ".php #name-" + readCookie("lang"));
-		$("#mail-inject").load("php/content-" + readCookie("lang") + ".php #mail-" + readCookie("lang"));
-		$("#subject-inject").load("php/content-" + readCookie("lang") + ".php #subject-" + readCookie("lang"));
-		$("#message-inject").load("php/content-" + readCookie("lang") + ".php #message-" + readCookie("lang"));
-		$("#send").load("php/content-" + readCookie("lang") + ".php #send-" + readCookie("lang"));
-		$("#reset").load("php/content-" + readCookie("lang") + ".php #reset-" + readCookie("lang"));
+		$("#contact").load("php/content-" + currentLanguage + ".php #contact-" + currentLanguage);
+		$("#name-inject").load("php/content-" + currentLanguage + ".php #name-" + currentLanguage);
+		$("#mail-inject").load("php/content-" + currentLanguage + ".php #mail-" + currentLanguage);
+		$("#subject-inject").load("php/content-" + currentLanguage + ".php #subject-" + currentLanguage);
+		$("#message-inject").load("php/content-" + currentLanguage + ".php #message-" + currentLanguage);
+		$("#send").load("php/content-" + currentLanguage + ".php #send-" + currentLanguage);
+		$("#reset").load("php/content-" + currentLanguage + ".php #reset-" + currentLanguage);
 
 
 

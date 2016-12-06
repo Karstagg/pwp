@@ -325,9 +325,9 @@ background for mobile devices
 		padding-bottom: 30%;
 	}
 	.separated {
-		padding-bottom: 20px;
-		border-bottom: 2px solid #1A1818;
-	}
+		 padding-bottom: 20px;
+		 border-bottom: 2px solid #1A1818;
+	 }
 
 	.label_select {
 		color: #880054;
@@ -404,4 +404,13 @@ thumbnails
 .thumbnail-row {
 	width: 100%;
 
+}
+/**********************************
+img
+**********************************/
+@media (min-width: 500px) {
+	.intro-image {
+		padding-left: 10%;
+		padding-bottom: 3%;
+	}
 }

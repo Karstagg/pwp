@@ -66,6 +66,7 @@
 						<li><a href="#intro" class="scroll"><div class="intro-link"></div></a></li>
 						<li><a href="#other-work" class="scroll"><div class="other-work-link"></div></a></li>
 						<li><a href="#contact" class="scroll"><div class="contact-link"></div></a></li>
+						<li><a href="https://www.linkedin.com/in/matthew-r-fisher" target="_blank">LinkedIn</a></li>
 						<li><a href="https://github.com/karstagg" target="_blank" >Github</a></li>
 						<li><a href="./img/matthew_fisher_resume.pdf" target="_blank"><div class="resume-link"></div></a></li>
 					</ul>
@@ -87,10 +88,12 @@
 				<div class="bg__bar"></div>
 				<a name="intro"></a>
 				<div id="greeting" class="container-fluid pad-down"></div>
-				<div id="intro" class="container-fluid pad-down bottom separated"></div>
+				<div id="intro" class="container-fluid pad-down bottom"></div>
+				<img src="img/berlin.jpg" class="img-responsive img-rounded intro-image" alt="Responsive image">
+				<div class="separated"></div>
 				<div class="bg__baz"></div>
 				<!--thumbnail gallery of other work-->
-				<div id="other-work" class="row thumbnail-row separated pad-down">
+				<div id="other-work" class="row thumbnail-row pad-down">
 					<div class="col-sm-6 col-md-4">
 						<div class="thumbnail">
 							<img class="website-thumbnail" src="./img/lingorator.png" alt="Lingorator">
@@ -113,6 +116,7 @@
 					</div>
 
 				</div>
+				<div class="separated"></div>
 
 
 				<div class="bg__bar"></div>
@@ -214,6 +218,7 @@
 						<li><a href="#intro" class="scroll"><div class="intro-link"></div></a></li>
 						<li><a href="#other-work" class="scroll"><div class="other-work-link"></div></a></li>
 						<li><a href="#contact" class="scroll"><div class="contact-link"></div></a></li>
+						<li><a href="https://www.linkedin.com/in/matthew-r-fisher" target="_blank">LinkedIn</a></li>
 						<li><a href="https://github.com/karstagg" target="_blank" >Github</a></li>
 						<li><a href="./img/matthew_fisher_resume.pdf" target="_blank"><div class="resume-link"></div></a></li>
 					</ul>

@@ -149,7 +149,7 @@ $(document).ready(function() {
 				errorMessage = "Please enter your name";
 			}
 			else if(currentLanguage === "de") {
-				errorMessage = "German name error";
+				errorMessage = "Bitte geben Sie Ihren Namen ein";
 			}
 			else {
 				errorMessage = "氏名を入力してください";
@@ -160,7 +160,7 @@ $(document).ready(function() {
 				errorMessage = "Please enter a valid email address.";
 			}
 			else if (currentLanguage === "de") {
-				errorMessage = "German email error";
+				errorMessage = "Bitte geben Sie eine gültige E-mail Adresse ein";
 			}
 			else {
 				errorMessage = "有効なメールアドレスを入力してください";
@@ -171,10 +171,10 @@ $(document).ready(function() {
 				errorMessage = "Please enter a message.";
 			}
 			else if (currentLanguage === "de") {
-				errorMessage = "german message error";
+				errorMessage = "Bitte geben Sie eine Nachricht ein";
 			}
 			else {
-				errorMessage = "メッセージを入力してください";
+				errorMessage = "メッセージを入力してくださいます";
 			}
 		}
 		if (type === "messageLength") {
@@ -182,10 +182,10 @@ $(document).ready(function() {
 				errorMessage = "Message too long.";
 			}
 			else if (currentLanguage === "de") {
-				errorMessage = "german message length error";
+				errorMessage = "Die Nachricht ist zu lang";
 			}
 			else {
-				errorMessage = "メッセージは長い過ぎる";
+				errorMessage = "メッセージは長過ぎ";
 			}
 		}
 		return errorMessage;

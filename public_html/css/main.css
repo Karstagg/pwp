@@ -321,9 +321,6 @@ input[type=radio] {
 	font-size: 1.3rem;
 }
 
-.no {
-	width: 90%;
-}
 .recap-style {
 	margin-right: 50%;
 	transform:scale(0.60);

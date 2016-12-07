@@ -118,11 +118,10 @@
 				</div>
 				<div class="separated"></div>
 
-
 				<div class="bg__bar"></div>
 
 				<!--Begin Contact Form-->
-				<form id="contact-form" action="php/phpmailer.php" method="post" class="col-xs-10 col-xs-offset-1 text-center top bottom last">
+				<form id="contact-form" action="php/phpmailer.php" method="post" class="col-xs-10 col-xs-offset-1 text-center top bottom">
 					<h2><div id="contact"></div></h2>
 					<div class="form-group">
 						<label for="name"><div id="name-inject"></div><span class="text-danger">*</span></label>
@@ -162,18 +161,13 @@
 					</div>
 
 					<!-- reCAPTCHA -->
-
-
 					<div class="g-recaptcha recap-style" data-theme="dark" data-sitekey="6Leyiw0UAAAAACK9mXrHUkLCGALZBgZQFigbXl2U"></div>
 					<button id="submitter" class="btn custom-btn custom-btn2" type="submit"><i class="fa fa-paper-plane"></i><div id="send"></div></button>
 					<button class="btn custom-btn custom-btn2" type="reset"><i class="fa fa-ban"></i><div id="reset"></div></button>
-
-
 				</form>
-
 				<!--empty area for form error/success output-->
-				<div class="row no">
-					<div class="col-xs-8 col-xs-offset-2">
+				<div class="row">
+					<div class="col-xs-8 col-xs-offset-2 last">
 						<div id="output-area"></div>
 					</div>
 				</div>

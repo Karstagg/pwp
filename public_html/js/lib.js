@@ -1,11 +1,4 @@
-
-
-
-
 $(document).ready(function() {
-
-
-
 	var currentLanguage;
 	//adapted from http://www.quirksmode.org/js/cookies.html
 	//reads cookie readCookie("lang")

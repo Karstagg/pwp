@@ -166,7 +166,7 @@
 					<button class="btn custom-btn custom-btn2" type="reset"><i class="fa fa-ban"></i><div id="reset"></div></button>
 				</form>
 				<!--empty area for form error/success output-->
-				<div class="row">
+				<div class="container no-overflow">
 					<div class="col-xs-8 col-xs-offset-2 last">
 						<div id="output-area"></div>
 					</div>

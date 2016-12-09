@@ -272,6 +272,9 @@ background for mobile devices
 		 padding-bottom: 20px;
 		 border-bottom: 2px solid #1A1818;
 	 }
+	.no-overflow {
+		width: 97vw;
+	}
 
 	.label_select {
 		color: #880054;
@@ -281,8 +284,10 @@ background for mobile devices
 .pad-down {
 	padding-top:20px;
 }
-
-a  {
+/*******************************
+links and misc
+*******************************/
+a {
 	color: #1A1818;
 	font-size: 2rem;
 	font-weight: 600;

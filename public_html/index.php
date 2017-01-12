@@ -80,7 +80,7 @@
 				<div class="mobile-background"></div>
 
 				<div class="cover">
-					<div class="col-xs-6 col-xs-offset-3 text-center v-center">
+					<div class="col-xs-6 text-center col-xs-offset-3 v-center">
 						<a href="#intro" class="btn custom-btn scroll"><div id="enter-btn"></div></a>
 					</div>
 				</div>

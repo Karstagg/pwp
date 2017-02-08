@@ -68,6 +68,7 @@
 						<li><a href="#contact" class="scroll"><div class="contact-link"></div></a></li>
 						<li><a href="https://www.linkedin.com/in/matthew-r-fisher" target="_blank">LinkedIn</a></li>
 						<li><a href="https://github.com/karstagg" target="_blank" >Github</a></li>
+						<li><a href="http://wordpress.m-fisher.net" target="_blank" >Blog</a></li>
 						<li><a href="./img/matthew_fisher_resume.pdf" target="_blank"><div class="resume-link"></div></a></li>
 					</ul>
 				</div><!-- /.navbar-collapse -->
@@ -89,7 +90,7 @@
 				<a name="intro"></a>
 				<div id="greeting" class="container-fluid pad-down"></div>
 				<div id="intro" class="container-fluid pad-down bottom"></div>
-				<img src="img/berlin.jpg" class="img-responsive img-rounded intro-image" alt="Responsive image">
+				<img src="img/grad.png" class="img-responsive img-rounded intro-image" alt="Responsive image">
 				<div class="separated"></div>
 				<div class="bg__baz"></div>
 				<!--thumbnail gallery of other work-->
@@ -214,6 +215,7 @@
 						<li><a href="#contact" class="scroll"><div class="contact-link"></div></a></li>
 						<li><a href="https://www.linkedin.com/in/matthew-r-fisher" target="_blank">LinkedIn</a></li>
 						<li><a href="https://github.com/karstagg" target="_blank" >Github</a></li>
+						<li><a href="http://wordpress.m-fisher.net" target="_blank" >Blog</a></li>
 						<li><a href="./img/matthew_fisher_resume.pdf" target="_blank"><div class="resume-link"></div></a></li>
 					</ul>
 				</div><!-- /.navbar-collapse -->

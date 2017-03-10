@@ -125,7 +125,7 @@ $(document).ready(function() {
 				}
 			});
 		});
-
+	
 	//starts and stops the css animation for the navbar brand on click
 	$('.navbar-brand').click(function() {
 
@@ -136,6 +136,7 @@ $(document).ready(function() {
 		}, 2025);
 
 	});
+
 /********************************************************************************
  validation for form
 ********************************************************************************/

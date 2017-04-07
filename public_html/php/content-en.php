@@ -22,6 +22,7 @@
 		<div id="live-work-link-en">Check it out!</div>
 		<div id="kiteCrypt-en">A zero knowledge encrypted chat application.</div>
 		<div id="lingorator-en">An application to help linguists generate new languages.</div>
+		<div id="loganSite-en">A website for a Tokyo based artist Logan Young</div>
 		<!--contact form-->
 		<div id="contact-en">Contact</div>
 		<div id="name-en">Name</div>

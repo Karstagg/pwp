@@ -115,6 +115,16 @@
 							</div>
 						</div>
 					</div>
+					<div class="col-sm-6 col-md-4">
+						<div class="thumbnail">
+							<img class="website-thumbnail" src="./img/logansite.png" alt="Logan's Website">
+							<div class="caption">
+								<h3>loganyoungart.com</h3>
+								<p id="loganSite-text"></p>
+								<a href="http://www.loganyoungart.com/" class="btn custom-btn custom-btn3" role="button" target="_blank"><div class="liveLink"></div></a>
+							</div>
+						</div>
+					</div>
 
 				</div>
 				<div class="separated"></div>

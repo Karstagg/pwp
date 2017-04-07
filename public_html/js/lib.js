@@ -79,6 +79,7 @@ $(document).ready(function() {
 		$(".liveLink").load("php/content-" + currentLanguage + ".php #live-work-link-" + currentLanguage);
 		$("#lingorator-text").load("php/content-" + currentLanguage + ".php #lingorator-" + currentLanguage);
 		$("#kiteCrypt-text").load("php/content-" + currentLanguage + ".php #kiteCrypt-" + currentLanguage);
+		$("#loganSite-text").load("php/content-" + currentLanguage + ".php #loganSite-" + currentLanguage);
 		//contact form
 		$("#contact").load("php/content-" + currentLanguage + ".php #contact-" + currentLanguage);
 		$("#name-inject").load("php/content-" + currentLanguage + ".php #name-" + currentLanguage);

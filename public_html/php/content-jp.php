@@ -22,6 +22,7 @@
 		<div id="live-work-link-jp">見てみな</div>
 		<div id="kiteCrypt-jp">知識ゼロでチャットを暗号化するアプリ</div>
 		<div id="lingorator-jp">言語学者のための言語生成アプリ</div>
+		<div id="loganSite-jp">ヤング・ローガンのサイトです。</div>
 		<!--contact form-->
 		<div id="contact-jp">お問い合わせ</div>
 		<div id="name-jp">氏名</div>

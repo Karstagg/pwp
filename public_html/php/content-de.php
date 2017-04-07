@@ -22,6 +22,7 @@
 		<div id="live-work-link-de">Betrachten</div>
 		<div id="kiteCrypt-de">Eine Zero-Knowledge verschlüsselte Chat App</div>
 		<div id="lingorator-de">Eine App für Linguisten, die neue Sprachen generiert.</div>
+		<div id="loganSite-de">Eine Site für Artist Logan Young.</div>
 		<!--contact form-->
 		<div id="contact-de">Kontakt</div>
 		<div id="name-de">Name</div>

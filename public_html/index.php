@@ -68,7 +68,7 @@
 						<li><a href="#contact" class="scroll"><div class="contact-link"></div></a></li>
 						<li><a href="https://www.linkedin.com/in/matthew-r-fisher" target="_blank">LinkedIn</a></li>
 						<li><a href="https://github.com/karstagg" target="_blank" >Github</a></li>
-						<li><a href="http://wordpress.m-fisher.net" target="_blank" >Blog</a></li>
+						<li><a href="http://blog.m-fisher.net" target="_blank" >Blog</a></li>
 						<li><a href="./img/matthew_fisher_resume.pdf" target="_blank"><div class="resume-link"></div></a></li>
 					</ul>
 				</div><!-- /.navbar-collapse -->
@@ -225,7 +225,7 @@
 						<li><a href="#contact" class="scroll"><div class="contact-link"></div></a></li>
 						<li><a href="https://www.linkedin.com/in/matthew-r-fisher" target="_blank">LinkedIn</a></li>
 						<li><a href="https://github.com/karstagg" target="_blank" >Github</a></li>
-						<li><a href="http://wordpress.m-fisher.net" target="_blank" >Blog</a></li>
+						<li><a href="http://blog.m-fisher.net" target="_blank" >Blog</a></li>
 						<li><a href="./img/matthew_fisher_resume.pdf" target="_blank"><div class="resume-link"></div></a></li>
 					</ul>
 				</div><!-- /.navbar-collapse -->
